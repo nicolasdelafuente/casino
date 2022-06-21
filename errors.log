@@ -1,0 +1,26 @@
+[21-Jun-2022 23:21:33 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[21-Jun-2022 23:21:33 UTC] APP::CONSTRUCT-> No hay controlador especificado
+[21-Jun-2022 23:21:33 UTC] LOGIN::CONSTRUCT-> Inicio de Login
+[21-Jun-2022 23:21:33 UTC] CONTROLLER::CONSTRUCT
+[21-Jun-2022 23:21:33 UTC] CONTROLLER::loadModel-> login
+[21-Jun-2022 23:21:33 UTC] VIEW::render-> login/index
+[21-Jun-2022 23:22:34 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[21-Jun-2022 23:22:34 UTC] APP::CONSTRUCT-> No hay controlador especificado
+[21-Jun-2022 23:22:34 UTC] LOGIN::CONSTRUCT-> Inicio de Login
+[21-Jun-2022 23:22:34 UTC] CONTROLLER::CONSTRUCT
+[21-Jun-2022 23:22:34 UTC] CONTROLLER::loadModel-> login
+[21-Jun-2022 23:22:34 UTC] VIEW::render-> login/index
+[21-Jun-2022 23:23:27 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[21-Jun-2022 23:23:27 UTC] APP::CONSTRUCT-> No hay controlador especificado
+[21-Jun-2022 23:23:27 UTC] LOGIN::CONSTRUCT-> Inicio de Login
+[21-Jun-2022 23:23:27 UTC] CONTROLLER::CONSTRUCT
+[21-Jun-2022 23:23:27 UTC] CONTROLLER::loadModel-> login
+[21-Jun-2022 23:23:27 UTC] LOGIN::RENDER-> Carga el index de Login
+[21-Jun-2022 23:23:27 UTC] VIEW::render-> login/index
+[21-Jun-2022 23:24:23 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[21-Jun-2022 23:24:23 UTC] APP::CONSTRUCT-> No hay controlador especificado
+[21-Jun-2022 23:24:23 UTC] LOGIN::CONSTRUCT-> Inicio de Login
+[21-Jun-2022 23:24:23 UTC] CONTROLLER::CONSTRUCT
+[21-Jun-2022 23:24:23 UTC] CONTROLLER::loadModel-> login
+[21-Jun-2022 23:24:23 UTC] LOGIN::RENDER-> Carga el index de Login
+[21-Jun-2022 23:24:23 UTC] VIEW::RENDER-> login/index

@@ -1,6 +1,6 @@
 <?php
 
-  define('URL', 'http://localhost:8080/casino/');
+  define('URL', 'http://localhost/casino/');
 
   define('HOST', 'localhost');
   define('DB', 'casino');

@@ -1,0 +1,34 @@
+[22-Jun-2022 01:58:28 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 01:58:28 UTC] APP::CONSTRUCT-> Controlador: signUp
+[22-Jun-2022 01:58:28 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 01:58:28 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 01:58:28 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 01:58:28 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 01:58:28 UTC] SessionController::validateSession()
+[22-Jun-2022 01:58:28 UTC] sessionController::getCurrentPage(): actualLink =>/casino/signUp, url => signUp
+[22-Jun-2022 01:58:28 UTC] sessionController::isPublic(): currentURL => signUp
+[22-Jun-2022 01:58:28 UTC] SessionController::validateSession() redirect al login
+[22-Jun-2022 01:58:28 UTC] CONTROLLER::loadModel-> signUp
+[22-Jun-2022 01:58:28 UTC] APP::CONSTRUCT-> Se carga el método default
+[22-Jun-2022 01:58:28 UTC] SIGNUP::RENDER-> Carga el Signup de login
+[22-Jun-2022 01:58:28 UTC] VIEW::RENDER-> login/signup
+[22-Jun-2022 01:58:28 UTC] VIEW::handleMessages
+[22-Jun-2022 01:58:28 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 01:58:28 UTC] APP::CONSTRUCT-> No hay controlador especificado
+[22-Jun-2022 01:58:28 UTC] LOGIN::CONSTRUCT-> Inicio de Login
+[22-Jun-2022 01:58:28 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 01:58:28 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 01:58:28 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 01:58:28 UTC] SessionController::validateSession()
+[22-Jun-2022 01:58:28 UTC] sessionController::getCurrentPage(): actualLink =>/casino/, url => 
+[22-Jun-2022 01:58:28 UTC] sessionController::isPublic(): currentURL => 
+[22-Jun-2022 01:58:28 UTC] SessionController::validateSession() public page
+[22-Jun-2022 01:58:28 UTC] CONTROLLER::loadModel-> login
+[22-Jun-2022 01:58:28 UTC] LOGINMODEL::CONSTRUCT-> inicio de LoginModel
+[22-Jun-2022 01:58:28 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 01:58:28 UTC] LOGIN::RENDER-> Carga el index de Login
+[22-Jun-2022 01:58:28 UTC] VIEW::RENDER-> login/index
+[22-Jun-2022 01:58:28 UTC] VIEW::handleMessages
+[22-Jun-2022 01:58:28 UTC] VIEW::showMessages
+[22-Jun-2022 01:58:28 UTC] VIEW::showError
+[22-Jun-2022 01:58:28 UTC] VIEW::showSuccess

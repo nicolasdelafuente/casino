@@ -30,8 +30,8 @@ CREATE TABLE IF NOT EXISTS movimientos (
 
 INSERT INTO usuarios (username_usuario, nombre_usuario, rol_usuario,password_usuario)
   values
-    ('zalocin','Nicolás',1,1234),
-    ('Principe','Enzo',1,1234);
+    ('zalocin','Nicolás','admin',1234),
+    ('Principe','Enzo','user',1234);
 
 INSERT INTO movimientos_tipo (id_movimiento_tipo,descripcion_movimiento_tipo)
   values

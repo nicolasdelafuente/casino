@@ -20,7 +20,6 @@
       </div>
       <input type="submit" value="Iniciar sesion" class="btn btn-primary"/>
       <p>¿Tienes una cuenta? <a href="<?php echo URL ?>">Iniciar sesion</a></p>
-  
     </form>
 
 

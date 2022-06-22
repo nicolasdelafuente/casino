@@ -1,34 +1,273 @@
-[22-Jun-2022 01:58:28 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
-[22-Jun-2022 01:58:28 UTC] APP::CONSTRUCT-> Controlador: signUp
-[22-Jun-2022 01:58:28 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
-[22-Jun-2022 01:58:28 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
-[22-Jun-2022 01:58:28 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
-[22-Jun-2022 01:58:28 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
-[22-Jun-2022 01:58:28 UTC] SessionController::validateSession()
-[22-Jun-2022 01:58:28 UTC] sessionController::getCurrentPage(): actualLink =>/casino/signUp, url => signUp
-[22-Jun-2022 01:58:28 UTC] sessionController::isPublic(): currentURL => signUp
-[22-Jun-2022 01:58:28 UTC] SessionController::validateSession() redirect al login
-[22-Jun-2022 01:58:28 UTC] CONTROLLER::loadModel-> signUp
-[22-Jun-2022 01:58:28 UTC] APP::CONSTRUCT-> Se carga el método default
-[22-Jun-2022 01:58:28 UTC] SIGNUP::RENDER-> Carga el Signup de login
-[22-Jun-2022 01:58:28 UTC] VIEW::RENDER-> login/signup
-[22-Jun-2022 01:58:28 UTC] VIEW::handleMessages
-[22-Jun-2022 01:58:28 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
-[22-Jun-2022 01:58:28 UTC] APP::CONSTRUCT-> No hay controlador especificado
-[22-Jun-2022 01:58:28 UTC] LOGIN::CONSTRUCT-> Inicio de Login
-[22-Jun-2022 01:58:28 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
-[22-Jun-2022 01:58:28 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
-[22-Jun-2022 01:58:28 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
-[22-Jun-2022 01:58:28 UTC] SessionController::validateSession()
-[22-Jun-2022 01:58:28 UTC] sessionController::getCurrentPage(): actualLink =>/casino/, url => 
-[22-Jun-2022 01:58:28 UTC] sessionController::isPublic(): currentURL => 
-[22-Jun-2022 01:58:28 UTC] SessionController::validateSession() public page
-[22-Jun-2022 01:58:28 UTC] CONTROLLER::loadModel-> login
-[22-Jun-2022 01:58:28 UTC] LOGINMODEL::CONSTRUCT-> inicio de LoginModel
-[22-Jun-2022 01:58:28 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[22-Jun-2022 01:58:28 UTC] LOGIN::RENDER-> Carga el index de Login
-[22-Jun-2022 01:58:28 UTC] VIEW::RENDER-> login/index
-[22-Jun-2022 01:58:28 UTC] VIEW::handleMessages
-[22-Jun-2022 01:58:28 UTC] VIEW::showMessages
-[22-Jun-2022 01:58:28 UTC] VIEW::showError
-[22-Jun-2022 01:58:28 UTC] VIEW::showSuccess
+[22-Jun-2022 03:46:33 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:46:33 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:46:33 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:46:33 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:46:33 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:46:33 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:46:33 UTC] SessionController::validateSession()
+[22-Jun-2022 03:46:33 UTC] sessionController::getCurrentPage(): actualLink =>/casino/signup/newUser, url => signup
+[22-Jun-2022 03:46:33 UTC] sessionController::isPublic(): currentURL => signup
+[22-Jun-2022 03:46:33 UTC] TRUE
+[22-Jun-2022 03:46:33 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:46:33 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:46:33 UTC] APP::CONSTRUCT-> Modelo: newUser
+[22-Jun-2022 03:46:33 UTC] ExistPOST: Existen parámetros
+[22-Jun-2022 03:46:33 UTC] getPost(username)
+[22-Jun-2022 03:46:33 UTC] getPost(password)
+[22-Jun-2022 03:46:33 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[22-Jun-2022 03:46:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:46:33 UTC] Conexión a BD exitosa
+[22-Jun-2022 03:46:33 UTC] zalocin7
+[22-Jun-2022 03:46:33 UTC] Conexión a BD exitosa
+[22-Jun-2022 03:46:33 UTC] USERMODEL::save-> PDOException: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\wamp64\www\casino\libs\model.php:15
+Stack trace:
+#0 C:\wamp64\www\casino\libs\model.php(15): PDO->prepare('INSERT INTO usu...')
+#1 C:\wamp64\www\casino\models\userModel.php(25): Model->prepare('INSERT INTO usu...')
+#2 C:\wamp64\www\casino\controllers\signup.php(41): UserModel->save()
+#3 C:\wamp64\www\casino\libs\app.php(50): Signup->newUser()
+#4 C:\wamp64\www\casino\index.php(16): App->__construct()
+#5 {main}
+[22-Jun-2022 03:46:33 UTC] redirect: signup/?error=1fdce6bbf47d6b26a9cd809ea1910222
+[22-Jun-2022 03:46:33 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:46:33 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:46:33 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:46:33 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:46:33 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:46:33 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:46:33 UTC] SessionController::validateSession()
+[22-Jun-2022 03:46:33 UTC] sessionController::getCurrentPage(): actualLink =>/casino//signup?error=1fdce6bbf47d6b26a9cd809ea1910222, url => 
+[22-Jun-2022 03:46:33 UTC] sessionController::isPublic(): currentURL => 
+[22-Jun-2022 03:46:33 UTC] TRUE
+[22-Jun-2022 03:46:33 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:46:33 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:46:33 UTC] APP::CONSTRUCT-> Se carga el método default
+[22-Jun-2022 03:46:33 UTC] SIGNUP::RENDER-> Carga el Signup de login
+[22-Jun-2022 03:46:33 UTC] VIEW::RENDER-> login/signup
+[22-Jun-2022 03:46:33 UTC] VIEW::handleMessages
+[22-Jun-2022 03:46:33 UTC] VIEW::handleError
+[22-Jun-2022 03:46:33 UTC] ErrorMessages::CONSTRUCT-> inicio de ErrorMessages
+[22-Jun-2022 03:46:33 UTC] View::handleError() existsKey =>Hubo un error al intentar registrarte. Intenta de nuevo
+[22-Jun-2022 03:46:33 UTC] VIEW::showMessages
+[22-Jun-2022 03:46:33 UTC] VIEW::showError
+[22-Jun-2022 03:46:33 UTC] VIEW::showSuccess
+[22-Jun-2022 03:48:36 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:48:36 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:48:36 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:48:36 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:48:36 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:48:36 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:48:36 UTC] SessionController::validateSession()
+[22-Jun-2022 03:48:36 UTC] sessionController::getCurrentPage(): actualLink =>/casino//signup?error=1fdce6bbf47d6b26a9cd809ea1910222, url => 
+[22-Jun-2022 03:48:36 UTC] sessionController::isPublic(): currentURL => 
+[22-Jun-2022 03:48:36 UTC] TRUE
+[22-Jun-2022 03:48:36 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:48:36 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:48:36 UTC] APP::CONSTRUCT-> Se carga el método default
+[22-Jun-2022 03:48:36 UTC] SIGNUP::RENDER-> Carga el Signup de login
+[22-Jun-2022 03:48:36 UTC] VIEW::RENDER-> login/signup
+[22-Jun-2022 03:48:36 UTC] VIEW::handleMessages
+[22-Jun-2022 03:48:36 UTC] VIEW::handleError
+[22-Jun-2022 03:48:36 UTC] ErrorMessages::CONSTRUCT-> inicio de ErrorMessages
+[22-Jun-2022 03:48:36 UTC] View::handleError() existsKey =>Hubo un error al intentar registrarte. Intenta de nuevo
+[22-Jun-2022 03:48:36 UTC] VIEW::showMessages
+[22-Jun-2022 03:48:36 UTC] VIEW::showError
+[22-Jun-2022 03:48:36 UTC] VIEW::showSuccess
+[22-Jun-2022 03:48:40 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:48:40 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:48:40 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:48:40 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:48:40 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:48:40 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:48:40 UTC] SessionController::validateSession()
+[22-Jun-2022 03:48:40 UTC] sessionController::getCurrentPage(): actualLink =>/casino/signup/newUser, url => signup
+[22-Jun-2022 03:48:40 UTC] sessionController::isPublic(): currentURL => signup
+[22-Jun-2022 03:48:40 UTC] TRUE
+[22-Jun-2022 03:48:40 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:48:40 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:48:40 UTC] APP::CONSTRUCT-> Modelo: newUser
+[22-Jun-2022 03:48:40 UTC] ExistPOST: Existen parámetros
+[22-Jun-2022 03:48:40 UTC] getPost(username)
+[22-Jun-2022 03:48:40 UTC] getPost(password)
+[22-Jun-2022 03:48:40 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[22-Jun-2022 03:48:40 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:48:40 UTC] Conexión a BD exitosa
+[22-Jun-2022 03:48:40 UTC] Conexión a BD exitosa
+[22-Jun-2022 03:48:40 UTC] USERMODEL::save-> PDOException: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\wamp64\www\casino\libs\model.php:15
+Stack trace:
+#0 C:\wamp64\www\casino\libs\model.php(15): PDO->prepare('INSERT INTO usu...')
+#1 C:\wamp64\www\casino\models\userModel.php(25): Model->prepare('INSERT INTO usu...')
+#2 C:\wamp64\www\casino\controllers\signup.php(41): UserModel->save()
+#3 C:\wamp64\www\casino\libs\app.php(50): Signup->newUser()
+#4 C:\wamp64\www\casino\index.php(16): App->__construct()
+#5 {main}
+[22-Jun-2022 03:48:40 UTC] redirect: signup/?error=1fdce6bbf47d6b26a9cd809ea1910222
+[22-Jun-2022 03:48:40 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:48:40 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:48:40 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:48:40 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:48:40 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:48:40 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:48:40 UTC] SessionController::validateSession()
+[22-Jun-2022 03:48:40 UTC] sessionController::getCurrentPage(): actualLink =>/casino//signup?error=1fdce6bbf47d6b26a9cd809ea1910222, url => 
+[22-Jun-2022 03:48:40 UTC] sessionController::isPublic(): currentURL => 
+[22-Jun-2022 03:48:40 UTC] TRUE
+[22-Jun-2022 03:48:40 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:48:40 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:48:40 UTC] APP::CONSTRUCT-> Se carga el método default
+[22-Jun-2022 03:48:40 UTC] SIGNUP::RENDER-> Carga el Signup de login
+[22-Jun-2022 03:48:40 UTC] VIEW::RENDER-> login/signup
+[22-Jun-2022 03:48:40 UTC] VIEW::handleMessages
+[22-Jun-2022 03:48:40 UTC] VIEW::handleError
+[22-Jun-2022 03:48:40 UTC] ErrorMessages::CONSTRUCT-> inicio de ErrorMessages
+[22-Jun-2022 03:48:40 UTC] View::handleError() existsKey =>Hubo un error al intentar registrarte. Intenta de nuevo
+[22-Jun-2022 03:48:40 UTC] VIEW::showMessages
+[22-Jun-2022 03:48:40 UTC] VIEW::showError
+[22-Jun-2022 03:48:40 UTC] VIEW::showSuccess
+[22-Jun-2022 03:48:52 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:48:52 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:48:52 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:48:52 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:48:52 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:48:52 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:48:52 UTC] SessionController::validateSession()
+[22-Jun-2022 03:48:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino//signup?error=1fdce6bbf47d6b26a9cd809ea1910222, url => 
+[22-Jun-2022 03:48:52 UTC] sessionController::isPublic(): currentURL => 
+[22-Jun-2022 03:48:52 UTC] TRUE
+[22-Jun-2022 03:48:52 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:48:52 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:48:52 UTC] APP::CONSTRUCT-> Se carga el método default
+[22-Jun-2022 03:48:52 UTC] SIGNUP::RENDER-> Carga el Signup de login
+[22-Jun-2022 03:48:52 UTC] VIEW::RENDER-> login/signup
+[22-Jun-2022 03:48:52 UTC] VIEW::handleMessages
+[22-Jun-2022 03:48:52 UTC] VIEW::handleError
+[22-Jun-2022 03:48:52 UTC] ErrorMessages::CONSTRUCT-> inicio de ErrorMessages
+[22-Jun-2022 03:48:52 UTC] View::handleError() existsKey =>Hubo un error al intentar registrarte. Intenta de nuevo
+[22-Jun-2022 03:48:52 UTC] VIEW::showMessages
+[22-Jun-2022 03:48:52 UTC] VIEW::showError
+[22-Jun-2022 03:48:52 UTC] VIEW::showSuccess
+[22-Jun-2022 03:48:55 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:48:55 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:48:55 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:48:55 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:48:55 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:48:55 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:48:55 UTC] SessionController::validateSession()
+[22-Jun-2022 03:48:55 UTC] sessionController::getCurrentPage(): actualLink =>/casino/signup/newUser, url => signup
+[22-Jun-2022 03:48:55 UTC] sessionController::isPublic(): currentURL => signup
+[22-Jun-2022 03:48:55 UTC] TRUE
+[22-Jun-2022 03:48:55 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:48:55 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:48:55 UTC] APP::CONSTRUCT-> Modelo: newUser
+[22-Jun-2022 03:48:55 UTC] ExistPOST: Existen parámetros
+[22-Jun-2022 03:48:55 UTC] getPost(username)
+[22-Jun-2022 03:48:55 UTC] getPost(password)
+[22-Jun-2022 03:48:55 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[22-Jun-2022 03:48:55 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:48:55 UTC] Conexión a BD exitosa
+[22-Jun-2022 03:48:55 UTC] 30035548
+[22-Jun-2022 03:48:55 UTC] Conexión a BD exitosa
+[22-Jun-2022 03:48:55 UTC] USERMODEL::save-> PDOException: PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\wamp64\www\casino\libs\model.php:15
+Stack trace:
+#0 C:\wamp64\www\casino\libs\model.php(15): PDO->prepare('INSERT INTO usu...')
+#1 C:\wamp64\www\casino\models\userModel.php(25): Model->prepare('INSERT INTO usu...')
+#2 C:\wamp64\www\casino\controllers\signup.php(41): UserModel->save()
+#3 C:\wamp64\www\casino\libs\app.php(50): Signup->newUser()
+#4 C:\wamp64\www\casino\index.php(16): App->__construct()
+#5 {main}
+[22-Jun-2022 03:48:55 UTC] redirect: signup/?error=1fdce6bbf47d6b26a9cd809ea1910222
+[22-Jun-2022 03:48:55 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:48:55 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:48:55 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:48:55 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:48:55 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:48:55 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:48:55 UTC] SessionController::validateSession()
+[22-Jun-2022 03:48:55 UTC] sessionController::getCurrentPage(): actualLink =>/casino//signup?error=1fdce6bbf47d6b26a9cd809ea1910222, url => 
+[22-Jun-2022 03:48:55 UTC] sessionController::isPublic(): currentURL => 
+[22-Jun-2022 03:48:55 UTC] TRUE
+[22-Jun-2022 03:48:55 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:48:55 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:48:55 UTC] APP::CONSTRUCT-> Se carga el método default
+[22-Jun-2022 03:48:56 UTC] SIGNUP::RENDER-> Carga el Signup de login
+[22-Jun-2022 03:48:56 UTC] VIEW::RENDER-> login/signup
+[22-Jun-2022 03:48:56 UTC] VIEW::handleMessages
+[22-Jun-2022 03:48:56 UTC] VIEW::handleError
+[22-Jun-2022 03:48:56 UTC] ErrorMessages::CONSTRUCT-> inicio de ErrorMessages
+[22-Jun-2022 03:48:56 UTC] View::handleError() existsKey =>Hubo un error al intentar registrarte. Intenta de nuevo
+[22-Jun-2022 03:48:56 UTC] VIEW::showMessages
+[22-Jun-2022 03:48:56 UTC] VIEW::showError
+[22-Jun-2022 03:48:56 UTC] VIEW::showSuccess
+[22-Jun-2022 03:50:36 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:50:36 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:50:36 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:50:36 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:50:36 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:50:36 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:50:36 UTC] SessionController::validateSession()
+[22-Jun-2022 03:50:36 UTC] sessionController::getCurrentPage(): actualLink =>/casino//signup?error=1fdce6bbf47d6b26a9cd809ea1910222, url => 
+[22-Jun-2022 03:50:36 UTC] sessionController::isPublic(): currentURL => 
+[22-Jun-2022 03:50:36 UTC] TRUE
+[22-Jun-2022 03:50:36 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:50:36 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:50:36 UTC] APP::CONSTRUCT-> Se carga el método default
+[22-Jun-2022 03:50:36 UTC] SIGNUP::RENDER-> Carga el Signup de login
+[22-Jun-2022 03:50:36 UTC] VIEW::RENDER-> login/signup
+[22-Jun-2022 03:50:36 UTC] VIEW::handleMessages
+[22-Jun-2022 03:50:36 UTC] VIEW::handleError
+[22-Jun-2022 03:50:36 UTC] ErrorMessages::CONSTRUCT-> inicio de ErrorMessages
+[22-Jun-2022 03:50:36 UTC] View::handleError() existsKey =>Hubo un error al intentar registrarte. Intenta de nuevo
+[22-Jun-2022 03:50:36 UTC] VIEW::showMessages
+[22-Jun-2022 03:50:36 UTC] VIEW::showError
+[22-Jun-2022 03:50:36 UTC] VIEW::showSuccess
+[22-Jun-2022 03:50:41 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:50:41 UTC] APP::CONSTRUCT-> Controlador: signup
+[22-Jun-2022 03:50:41 UTC] SIGNUP::CONSTRUCT-> Inicio de Signup
+[22-Jun-2022 03:50:41 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:50:41 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:50:41 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:50:41 UTC] SessionController::validateSession()
+[22-Jun-2022 03:50:41 UTC] sessionController::getCurrentPage(): actualLink =>/casino/signup/newUser, url => signup
+[22-Jun-2022 03:50:41 UTC] sessionController::isPublic(): currentURL => signup
+[22-Jun-2022 03:50:41 UTC] TRUE
+[22-Jun-2022 03:50:41 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:50:41 UTC] CONTROLLER::loadModel-> signup
+[22-Jun-2022 03:50:41 UTC] APP::CONSTRUCT-> Modelo: newUser
+[22-Jun-2022 03:50:41 UTC] ExistPOST: Existen parámetros
+[22-Jun-2022 03:50:41 UTC] getPost(username)
+[22-Jun-2022 03:50:41 UTC] getPost(password)
+[22-Jun-2022 03:50:41 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[22-Jun-2022 03:50:41 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:50:42 UTC] Conexión a BD exitosa
+[22-Jun-2022 03:50:42 UTC] zalocin7
+[22-Jun-2022 03:50:42 UTC] Conexión a BD exitosa
+[22-Jun-2022 03:50:42 UTC] PHP Warning:  error_log() expects parameter 1 to be string, object given in C:\wamp64\www\casino\models\userModel.php on line 26
+[22-Jun-2022 03:50:42 UTC] PHP Stack trace:
+[22-Jun-2022 03:50:42 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[22-Jun-2022 03:50:42 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[22-Jun-2022 03:50:42 UTC] PHP   3. Signup->newUser() C:\wamp64\www\casino\libs\app.php:50
+[22-Jun-2022 03:50:42 UTC] PHP   4. UserModel->save() C:\wamp64\www\casino\controllers\signup.php:41
+[22-Jun-2022 03:50:42 UTC] PHP   5. error_log($message = class PDOStatement { public $queryString = 'INSERT INTO usuarios (username_usuario, nombre_usuario, rol_usuario, password_usuario) VALUES (:username, :name, :role, :password)' }) C:\wamp64\www\casino\models\userModel.php:26
+[22-Jun-2022 03:50:42 UTC] redirect: /?success=8281e04ed52ccfc13820d0f6acb0985a
+[22-Jun-2022 03:50:42 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[22-Jun-2022 03:50:42 UTC] APP::CONSTRUCT-> No hay controlador especificado
+[22-Jun-2022 03:50:42 UTC] LOGIN::CONSTRUCT-> Inicio de Login
+[22-Jun-2022 03:50:42 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:50:42 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[22-Jun-2022 03:50:42 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[22-Jun-2022 03:50:42 UTC] SessionController::validateSession()
+[22-Jun-2022 03:50:42 UTC] sessionController::getCurrentPage(): actualLink =>/casino//?success=8281e04ed52ccfc13820d0f6acb0985a, url => 
+[22-Jun-2022 03:50:42 UTC] sessionController::isPublic(): currentURL => 
+[22-Jun-2022 03:50:42 UTC] TRUE
+[22-Jun-2022 03:50:42 UTC] SessionController::validateSession() public page
+[22-Jun-2022 03:50:42 UTC] CONTROLLER::loadModel-> login
+[22-Jun-2022 03:50:42 UTC] LOGINMODEL::CONSTRUCT-> inicio de LoginModel
+[22-Jun-2022 03:50:42 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[22-Jun-2022 03:50:42 UTC] LOGIN::RENDER-> Carga el index de Login
+[22-Jun-2022 03:50:42 UTC] VIEW::RENDER-> login/index
+[22-Jun-2022 03:50:42 UTC] VIEW::handleMessages
+[22-Jun-2022 03:50:42 UTC] VIEW::handleSuccess
+[22-Jun-2022 03:50:42 UTC] SuccessMessages::CONSTRUCT-> inicio de SuccessMessages
+[22-Jun-2022 03:50:42 UTC] View::handleError() existsKey =>1
+[22-Jun-2022 03:50:42 UTC] VIEW::showMessages
+[22-Jun-2022 03:50:42 UTC] VIEW::showError
+[22-Jun-2022 03:50:42 UTC] VIEW::showSuccess

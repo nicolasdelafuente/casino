@@ -3,21 +3,15 @@ USE casino;
 
 DROP TABLE IF EXISTS movimientos;
 DROP TABLE IF EXISTS movimientos_tipo;
-DROP TABLE IF EXISTS roles;
 DROP TABLE IF EXISTS usuarios;
 
-
-CREATE TABLE IF NOT EXISTS roles ( 
-  id_rol INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  descripcion_rol VARCHAR(20) UNIQUE NOT NULL
-);
 
 CREATE TABLE IF NOT EXISTS usuarios (
     id_usuario INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     username_usuario VARCHAR(20) UNIQUE NOT NULL,
-    nombre_usuario VARCHAR(20) NOT NULL,
-    rol_usuario INT NOT NULL,
-    password_usuario VARCHAR(20)NOT NULL
+    nombre_usuario VARCHAR(20),
+    rol_usuario VARCHAR(20),
+    password_usuario VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS movimientos_tipo (
@@ -33,10 +27,6 @@ CREATE TABLE IF NOT EXISTS movimientos (
     fecha_movimiento TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO roles (descripcion_rol)
-  values
-    ('Adminsitrador'),
-    ('Usuario');
 
 INSERT INTO usuarios (username_usuario, nombre_usuario, rol_usuario,password_usuario)
   values

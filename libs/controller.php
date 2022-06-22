@@ -65,7 +65,7 @@
           $params = '?' . $params;
       }
       error_log("redirect: " . $url .'/'. $params);
-      header('location: ' . constant('URL') . $url . $params);
+      header('location: ' . constant('URL') .'/'. $url . $params);
     }
   }
 

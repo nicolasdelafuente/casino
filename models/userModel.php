@@ -1,5 +1,5 @@
 <?php
-
+require_once './libs/iModel.php';
 class UserModel extends Model implements IModel{
 
   private $id;
@@ -19,13 +19,17 @@ class UserModel extends Model implements IModel{
   }
 
   public function save(){
+    error_log($this->username);
+
     try{
-      $query = $this->prepare('INSERT INTO usuarios (_usuario, nombre_usuario, rol_usuario, password_usuario) VALUES(:username, :name, :role, :password');
+      $query = $this->prepare('INSERT INTO usuarios (username_usuario, nombre_usuario, rol_usuario, password_usuario) VALUES (:username, :name, :role, :password)');
+      error_log($query);
+      
       $query->execute([
-          'username'  => $this->username,
-          'name'      => $this->name,
-          'role'      => $this->role,
-          'password'  => $this->password
+          ':username'  => $this->username,
+          ':name'      => $this->name,
+          ':role'      => $this->role,
+          ':password'  => $this->password
           ]);
       return true;
     }catch(PDOException $e){

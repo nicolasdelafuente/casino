@@ -132,11 +132,14 @@
       error_log("sessionController::isPublic(): currentURL => " . $currentURL);
       $currentURL = preg_replace( "/\?.*/", "", $currentURL); //omitir get info
       for($i = 0; $i < sizeof($this->sites); $i++){
-          if($currentURL === $this->sites[$i]['site'] && $this->sites[$i]['access'] === 'public'){
-              return true;
-          }
+        
+        if($currentURL == $this->sites[$i]['site'] && $this->sites[$i]['access'] == 'public'){
+          error_log('TRUE');
+          return true;  
+        }
       }
-      return false;
+      error_log('FALSE');
+      return false;      
     }
 
     private function redirectDefaultSiteByRole($role){

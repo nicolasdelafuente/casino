@@ -46,7 +46,7 @@
               error_log('APP::CONSTRUCT->'. $controller .'/'. $url[1].'/'. $params);
               $controller->{$url[1]}($params);
             } else {
-              error_log('APP::CONSTRUCT->'. $controller .'/'. $url[1]);
+              //error_log('APP::CONSTRUCT->'. $controller .'/'. $url[1]);
               $controller->{$url[1]}();    
             }
           }else{

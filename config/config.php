@@ -2,7 +2,7 @@
 
   define('URL', 'http://localhost/casino/');
 
-  define('HOST', 'localhost');
+  define('HOST', '127.0.0.1');
   define('DB', 'casino');
   define('USER', 'root');
   define('PASSWORD', "");

@@ -3,6 +3,7 @@
   class Model {
 
     function __construct(){
+      error_log('MODEL::CONSTRUCT-> inicio de controller(libs)');
       $this->db = new Database();
     }
 

@@ -1,5 +1,6 @@
 <?php
   
+  require_once 'controllers/errores.php';
   class App {
 
     function __construct() {
@@ -50,6 +51,8 @@
             }
           }else{
             error_log('APP::CONSTRUCT-> Error, no existe método');
+            $controller = new Errores();
+            $controller->render();
           }
         }else{
           error_log('APP::CONSTRUCT-> Se carga el método default');
@@ -57,6 +60,8 @@
         }
     }else{
       error_log('APP::CONSTRUCT-> Error, no existe el archivo.');
+      $controller = new Errores();
+      $controller->render();
     }
   }
 }

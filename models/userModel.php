@@ -22,7 +22,7 @@ class UserModel extends Model implements IModel{
     error_log($this->username);
 
     try{
-      $query = $this->prepare('INSERT INTO usuarios (username_usuario, nombre_usuario, rol_usuario, password_usuario) VALUES (:username, :name, :role, :password)');
+      $query = $this->prepare('INSERT INTO users (username, name, role, password) VALUES (:username, :name, :role, :password)');
       error_log($query);
       
       $query->execute([
@@ -42,7 +42,7 @@ class UserModel extends Model implements IModel{
     $items = [];
 
     try{
-      $query = $this->query('SELECT * FROM usuarios');
+      $query = $this->query('SELECT * FROM users');
 
       while($p = $query->fetch(PDO::FETCH_ASSOC)){
           $item = new UserModel();
@@ -64,7 +64,7 @@ class UserModel extends Model implements IModel{
 
   public function getItem($id){
     try{
-      $query = $this->prepare('SELECT * FROM usuarios WHERE id_usuario = :id');
+      $query = $this->prepare('SELECT * FROM users WHERE id = :id');
       $query->execute([ 'id' => $id]);
       $user = $query->fetch(PDO::FETCH_ASSOC);
 
@@ -83,7 +83,7 @@ class UserModel extends Model implements IModel{
 
   public function delete($id){
     try{
-      $query = $this->prepare('DELETE FROM usuarios WHERE id_usuario = :id');
+      $query = $this->prepare('DELETE FROM users WHERE id = :id');
       $query->execute([ 'id' => $id]);
       return true;
     }catch(PDOException $e){
@@ -94,7 +94,7 @@ class UserModel extends Model implements IModel{
 
   public function update(){
     try{
-      $query = $this->prepare('UPDATE usuarios SET username_usuario = :username, nombre_usuario = :name, password_usuario = :password  WHERE id_usuario = :id');
+      $query = $this->prepare('UPDATE users SET username = :username, name = :name, password = :password  WHERE id = :id');
       $query->execute([
           'id'        => $this->id,
           'username' => $this->username,
@@ -110,7 +110,7 @@ class UserModel extends Model implements IModel{
 
   public function exists($username){
     try{
-      $query = $this->prepare('SELECT username_usuario FROM usuarios WHERE username_usuario = :username');
+      $query = $this->prepare('SELECT username FROM users WHERE username = :username');
       $query->execute( ['username' => $username]);
       
       if($query->rowCount() > 0){
@@ -129,8 +129,6 @@ class UserModel extends Model implements IModel{
       $this->username = $array['username'];
       $this->password = $array['password'];
       $this->role = $array['role'];
-      $this->budget = $array['budget'];
-      $this->photo = $array['photo'];
       $this->name = $array['name'];
   }
 
@@ -140,9 +138,11 @@ class UserModel extends Model implements IModel{
 
   
   public function setId($id){             $this->id = $id;}  
-  public function setUsername($username){     $this->username = $username;}
+  public function setUsername($username){ $this->username = $username;}
   public function setName($name){         $this->name = $name;}
   public function setRole($role){         $this->role = $role;}
+  public function setPassword($password){ $this->password = $password;}
+  /*
   public function setPassword($password, $hash = true){ 
     if($hash){
       $this->password = $this->getHashedPassword($password);
@@ -150,6 +150,7 @@ class UserModel extends Model implements IModel{
       $this->password = $password;
     }
   }
+  */
   public function getId(){        return $this->id;}
   public function getUsername(){  return $this->username;}
   public function getName(){      return $this->name;}  

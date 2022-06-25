@@ -1,0 +1,118 @@
+s[25-Jun-2022 16:38:58 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[25-Jun-2022 16:38:58 UTC] APP::CONSTRUCT-> Controlador: login
+[25-Jun-2022 16:38:58 UTC] LOGIN::CONSTRUCT-> Inicio de Login
+[25-Jun-2022 16:38:58 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:38:58 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[25-Jun-2022 16:38:58 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[25-Jun-2022 16:38:58 UTC] SessionController::validateSession()
+[25-Jun-2022 16:38:58 UTC] sessionController::getCurrentPage(): actualLink =>/casino/login/authenticate, url => login
+[25-Jun-2022 16:38:58 UTC] sessionController::isPublic(): currentURL => login
+[25-Jun-2022 16:38:58 UTC] FALSE
+[25-Jun-2022 16:38:58 UTC] SessionController::validateSession() redirect al login
+[25-Jun-2022 16:38:58 UTC] CONTROLLER::loadModel-> login
+[25-Jun-2022 16:38:58 UTC] LOGINMODEL::CONSTRUCT-> inicio de LoginModel
+[25-Jun-2022 16:38:58 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:38:58 UTC] APP::CONSTRUCT-> Modelo: authenticate
+[25-Jun-2022 16:38:58 UTC] ExistPOST: Existen parámetros
+[25-Jun-2022 16:38:58 UTC] getPost(username)
+[25-Jun-2022 16:38:58 UTC] getPost(password)
+[25-Jun-2022 16:38:58 UTC] Conexión a BD exitosa
+[25-Jun-2022 16:38:58 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[25-Jun-2022 16:38:58 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:38:58 UTC] login: user id 8
+[25-Jun-2022 16:38:58 UTC] login: success
+[25-Jun-2022 16:38:58 UTC] Login::authenticate() passed
+[25-Jun-2022 16:38:58 UTC] sessionController::initialize(): user: zalocin
+[25-Jun-2022 16:38:58 UTC] sessionController::authorizeAccess(): role: user
+[25-Jun-2022 16:38:58 UTC] redirect: dashboard/
+[25-Jun-2022 16:38:58 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[25-Jun-2022 16:38:58 UTC] APP::CONSTRUCT-> Controlador: dashboard
+[25-Jun-2022 16:38:58 UTC] DASHBOARD::CONSTRUCT-> Inicio de Dashboard
+[25-Jun-2022 16:38:58 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:38:58 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[25-Jun-2022 16:38:58 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[25-Jun-2022 16:38:58 UTC] SessionController::validateSession()
+[25-Jun-2022 16:38:58 UTC] PHP Fatal error:  Uncaught Error: Class 'UserModel' not found in C:\wamp64\www\casino\classes\sessionController.php:118
+Stack trace:
+#0 C:\wamp64\www\casino\classes\sessionController.php(68): SessionController->getUserSessionData()
+#1 C:\wamp64\www\casino\classes\sessionController.php(48): SessionController->validateSession()
+#2 C:\wamp64\www\casino\classes\sessionController.php(19): SessionController->init()
+#3 C:\wamp64\www\casino\controllers\dashboard.php(7): SessionController->__construct()
+#4 C:\wamp64\www\casino\libs\app.php(28): Dashboard->__construct()
+#5 C:\wamp64\www\casino\index.php(16): App->__construct()
+#6 {main}
+  thrown in C:\wamp64\www\casino\classes\sessionController.php on line 118
+[25-Jun-2022 16:40:12 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[25-Jun-2022 16:40:12 UTC] APP::CONSTRUCT-> No hay controlador especificado
+[25-Jun-2022 16:40:12 UTC] LOGIN::CONSTRUCT-> Inicio de Login
+[25-Jun-2022 16:40:12 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:40:12 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[25-Jun-2022 16:40:12 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[25-Jun-2022 16:40:12 UTC] SessionController::validateSession()
+[25-Jun-2022 16:40:12 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[25-Jun-2022 16:40:12 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:40:12 UTC] Conexión a BD exitosa
+[25-Jun-2022 16:40:12 UTC] sessionController::getUserSessionData(): zalocin
+[25-Jun-2022 16:40:12 UTC] sessionController::validateSession(): username:zalocin - role: user
+[25-Jun-2022 16:40:12 UTC] sessionController::getCurrentPage(): actualLink =>/casino/, url => 
+[25-Jun-2022 16:40:12 UTC] sessionController::isPublic(): currentURL => 
+[25-Jun-2022 16:40:12 UTC] TRUE
+[25-Jun-2022 16:40:12 UTC] SessionController::validateSession() => sitio público, redirige al main de cada rol
+[25-Jun-2022 16:40:12 UTC] CONTROLLER::loadModel-> login
+[25-Jun-2022 16:40:12 UTC] LOGINMODEL::CONSTRUCT-> inicio de LoginModel
+[25-Jun-2022 16:40:12 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:40:12 UTC] VIEW::RENDER-> login/index
+[25-Jun-2022 16:40:12 UTC] VIEW::handleMessages
+[25-Jun-2022 16:40:12 UTC] VIEW::showMessages
+[25-Jun-2022 16:40:12 UTC] VIEW::showError
+[25-Jun-2022 16:40:12 UTC] VIEW::showSuccess
+[25-Jun-2022 16:40:13 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[25-Jun-2022 16:40:13 UTC] APP::CONSTRUCT-> Controlador: dashboard
+[25-Jun-2022 16:40:13 UTC] DASHBOARD::CONSTRUCT-> Inicio de Dashboard
+[25-Jun-2022 16:40:13 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:40:13 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[25-Jun-2022 16:40:13 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[25-Jun-2022 16:40:13 UTC] SessionController::validateSession()
+[25-Jun-2022 16:40:13 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[25-Jun-2022 16:40:13 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:40:13 UTC] Conexión a BD exitosa
+[25-Jun-2022 16:40:13 UTC] sessionController::getUserSessionData(): zalocin
+[25-Jun-2022 16:40:13 UTC] sessionController::validateSession(): username:zalocin - role: user
+[25-Jun-2022 16:40:13 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
+[25-Jun-2022 16:40:13 UTC] sessionController::isPublic(): currentURL => dashboard
+[25-Jun-2022 16:40:13 UTC] FALSE
+[25-Jun-2022 16:40:13 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
+[25-Jun-2022 16:40:13 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[25-Jun-2022 16:40:13 UTC] CONTROLLER::loadModel-> dashboard
+[25-Jun-2022 16:40:13 UTC] APP::CONSTRUCT-> Se carga el método default
+[25-Jun-2022 16:40:13 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
+[25-Jun-2022 16:40:13 UTC] VIEW::RENDER-> dashboard/index
+[25-Jun-2022 16:40:13 UTC] VIEW::handleMessages
+[25-Jun-2022 16:40:13 UTC] VIEW::showMessages
+[25-Jun-2022 16:40:13 UTC] VIEW::showError
+[25-Jun-2022 16:40:13 UTC] VIEW::showSuccess
+[25-Jun-2022 16:40:15 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[25-Jun-2022 16:40:15 UTC] APP::CONSTRUCT-> Controlador: dashboard
+[25-Jun-2022 16:40:15 UTC] DASHBOARD::CONSTRUCT-> Inicio de Dashboard
+[25-Jun-2022 16:40:15 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:40:15 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[25-Jun-2022 16:40:15 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[25-Jun-2022 16:40:15 UTC] SessionController::validateSession()
+[25-Jun-2022 16:40:15 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[25-Jun-2022 16:40:15 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 16:40:15 UTC] Conexión a BD exitosa
+[25-Jun-2022 16:40:15 UTC] sessionController::getUserSessionData(): zalocin
+[25-Jun-2022 16:40:15 UTC] sessionController::validateSession(): username:zalocin - role: user
+[25-Jun-2022 16:40:15 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
+[25-Jun-2022 16:40:15 UTC] sessionController::isPublic(): currentURL => dashboard
+[25-Jun-2022 16:40:15 UTC] FALSE
+[25-Jun-2022 16:40:15 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
+[25-Jun-2022 16:40:15 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[25-Jun-2022 16:40:15 UTC] CONTROLLER::loadModel-> dashboard
+[25-Jun-2022 16:40:15 UTC] APP::CONSTRUCT-> Se carga el método default
+[25-Jun-2022 16:40:15 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
+[25-Jun-2022 16:40:15 UTC] VIEW::RENDER-> dashboard/index
+[25-Jun-2022 16:40:15 UTC] VIEW::handleMessages
+[25-Jun-2022 16:40:15 UTC] VIEW::showMessages
+[25-Jun-2022 16:40:15 UTC] VIEW::showError
+[25-Jun-2022 16:40:15 UTC] VIEW::showSuccess

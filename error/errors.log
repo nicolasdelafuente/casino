@@ -1,136 +1,68 @@
-[25-Jun-2022 21:59:33 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
-[25-Jun-2022 21:59:33 UTC] APP::CONSTRUCT-> Controlador: dashboard
-[25-Jun-2022 21:59:33 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
-[25-Jun-2022 21:59:33 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
-[25-Jun-2022 21:59:33 UTC] SessionController::validateSession()
-[25-Jun-2022 21:59:33 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] Conexión a BD exitosa
-[25-Jun-2022 21:59:33 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 21:59:33 UTC] sessionController::validateSession(): username:zalocin - role: user
-[25-Jun-2022 21:59:33 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 21:59:33 UTC] sessionController::isPublic(): currentURL => dashboard
-[25-Jun-2022 21:59:33 UTC] FALSE
-[25-Jun-2022 21:59:33 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 21:59:33 UTC] SessionController::validateSession() => autorizado, lo deja pasar
-[25-Jun-2022 21:59:33 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] Conexión a BD exitosa
-[25-Jun-2022 21:59:33 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 21:59:33 UTC] Dashboard::constructor() 
-[25-Jun-2022 21:59:33 UTC] CONTROLLER::loadModel-> dashboard
-[25-Jun-2022 21:59:33 UTC] APP::CONSTRUCT-> Se carga el método default
-[25-Jun-2022 21:59:33 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] Conexión a BD exitosa
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] Conexión a BD exitosa
-[25-Jun-2022 21:59:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 21:59:33 UTC] Conexión a BD exitosa
-[25-Jun-2022 21:59:33 UTC] VIEW::RENDER-> dashboard/index
-[25-Jun-2022 21:59:33 UTC] VIEW::handleMessages
-[25-Jun-2022 21:59:33 UTC] PHP Notice:  Undefined index: dineroApostado in C:\wamp64\www\casino\views\dashboard\index.php on line 4
-[25-Jun-2022 21:59:33 UTC] PHP Stack trace:
-[25-Jun-2022 21:59:33 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 21:59:33 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 21:59:33 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 21:59:33 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$Y/XfjX6KHwS/ABpXcs4XQeFUeNPUk.SbfUsuqFE89j0Oh2CBxXZMC'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 21:59:33 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 21:59:33 UTC] VIEW::showMessages
-[25-Jun-2022 21:59:33 UTC] VIEW::showError
-[25-Jun-2022 21:59:33 UTC] VIEW::showSuccess
-[25-Jun-2022 21:59:33 UTC] PHP Notice:  Undefined variable: dineroGanado in C:\wamp64\www\casino\views\dashboard\index.php on line 61
-[25-Jun-2022 21:59:33 UTC] PHP Stack trace:
-[25-Jun-2022 21:59:33 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 21:59:33 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 21:59:33 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 21:59:33 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$Y/XfjX6KHwS/ABpXcs4XQeFUeNPUk.SbfUsuqFE89j0Oh2CBxXZMC'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 21:59:33 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 21:59:33 UTC] PHP Notice:  Undefined variable: saldo in C:\wamp64\www\casino\views\dashboard\index.php on line 79
-[25-Jun-2022 21:59:33 UTC] PHP Stack trace:
-[25-Jun-2022 21:59:33 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 21:59:33 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 21:59:33 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 21:59:33 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$Y/XfjX6KHwS/ABpXcs4XQeFUeNPUk.SbfUsuqFE89j0Oh2CBxXZMC'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 21:59:33 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:00:06 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
-[25-Jun-2022 22:00:06 UTC] APP::CONSTRUCT-> Controlador: dashboard
-[25-Jun-2022 22:00:06 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
-[25-Jun-2022 22:00:06 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
-[25-Jun-2022 22:00:06 UTC] SessionController::validateSession()
-[25-Jun-2022 22:00:06 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:00:06 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:00:06 UTC] sessionController::validateSession(): username:zalocin - role: user
-[25-Jun-2022 22:00:06 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:00:06 UTC] sessionController::isPublic(): currentURL => dashboard
-[25-Jun-2022 22:00:06 UTC] FALSE
-[25-Jun-2022 22:00:06 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:00:06 UTC] SessionController::validateSession() => autorizado, lo deja pasar
-[25-Jun-2022 22:00:06 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:00:06 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:00:06 UTC] Dashboard::constructor() 
-[25-Jun-2022 22:00:06 UTC] CONTROLLER::loadModel-> dashboard
-[25-Jun-2022 22:00:06 UTC] APP::CONSTRUCT-> Se carga el método default
-[25-Jun-2022 22:00:06 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:00:06 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:00:06 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:00:06 UTC] VIEW::RENDER-> dashboard/index
-[25-Jun-2022 22:00:06 UTC] VIEW::handleMessages
-[25-Jun-2022 22:00:06 UTC] PHP Notice:  Undefined index: dineroApostado in C:\wamp64\www\casino\views\dashboard\index.php on line 4
-[25-Jun-2022 22:00:06 UTC] PHP Stack trace:
-[25-Jun-2022 22:00:06 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:00:06 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:00:06 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:00:06 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$2gpmhdHWzprSW3hdwuRole1lAnazssIAj6E6fQar3/0Ik.fccdULK'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:00:06 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:00:06 UTC] VIEW::showMessages
-[25-Jun-2022 22:00:06 UTC] VIEW::showError
-[25-Jun-2022 22:00:06 UTC] VIEW::showSuccess
-[25-Jun-2022 22:00:06 UTC] PHP Notice:  Undefined variable: dineroGanado in C:\wamp64\www\casino\views\dashboard\index.php on line 62
-[25-Jun-2022 22:00:06 UTC] PHP Stack trace:
-[25-Jun-2022 22:00:06 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:00:06 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:00:06 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:00:06 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$2gpmhdHWzprSW3hdwuRole1lAnazssIAj6E6fQar3/0Ik.fccdULK'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:00:06 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:00:06 UTC] PHP Notice:  Undefined variable: saldo in C:\wamp64\www\casino\views\dashboard\index.php on line 80
-[25-Jun-2022 22:00:06 UTC] PHP Stack trace:
-[25-Jun-2022 22:00:06 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:00:06 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:00:06 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:00:06 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$2gpmhdHWzprSW3hdwuRole1lAnazssIAj6E6fQar3/0Ik.fccdULK'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:00:06 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[25-Jun-2022 22:03:29 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[25-Jun-2022 22:03:29 UTC] APP::CONSTRUCT-> Controlador: dashboard
+[25-Jun-2022 22:03:29 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[25-Jun-2022 22:03:29 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[25-Jun-2022 22:03:29 UTC] SessionController::validateSession()
+[25-Jun-2022 22:03:29 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] Conexión a BD exitosa
+[25-Jun-2022 22:03:29 UTC] sessionController::getUserSessionData(): zalocin
+[25-Jun-2022 22:03:29 UTC] sessionController::validateSession(): username:zalocin - role: user
+[25-Jun-2022 22:03:29 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
+[25-Jun-2022 22:03:29 UTC] sessionController::isPublic(): currentURL => dashboard
+[25-Jun-2022 22:03:29 UTC] FALSE
+[25-Jun-2022 22:03:29 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
+[25-Jun-2022 22:03:29 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[25-Jun-2022 22:03:29 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] Conexión a BD exitosa
+[25-Jun-2022 22:03:29 UTC] sessionController::getUserSessionData(): zalocin
+[25-Jun-2022 22:03:29 UTC] Dashboard::constructor() 
+[25-Jun-2022 22:03:29 UTC] CONTROLLER::loadModel-> dashboard
+[25-Jun-2022 22:03:29 UTC] APP::CONSTRUCT-> Se carga el método default
+[25-Jun-2022 22:03:29 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] Conexión a BD exitosa
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] Conexión a BD exitosa
+[25-Jun-2022 22:03:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[25-Jun-2022 22:03:29 UTC] Conexión a BD exitosa
+[25-Jun-2022 22:03:29 UTC] VIEW::RENDER-> dashboard/index
+[25-Jun-2022 22:03:29 UTC] VIEW::handleMessages
+[25-Jun-2022 22:03:29 UTC] PHP Notice:  Undefined index: dineroApostado in C:\wamp64\www\casino\views\dashboard\index.php on line 4
+[25-Jun-2022 22:03:29 UTC] PHP Stack trace:
+[25-Jun-2022 22:03:29 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[25-Jun-2022 22:03:29 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[25-Jun-2022 22:03:29 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
+[25-Jun-2022 22:03:29 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$9bTmHyZcdiT/gnzPMVWxOO6fs1I9OJNn4dw5q4hboQdn8ITeMbf7a'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
+[25-Jun-2022 22:03:29 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[25-Jun-2022 22:03:29 UTC] VIEW::showMessages
+[25-Jun-2022 22:03:29 UTC] VIEW::showError
+[25-Jun-2022 22:03:29 UTC] VIEW::showSuccess
+[25-Jun-2022 22:03:29 UTC] PHP Notice:  Undefined variable: dineroGanado in C:\wamp64\www\casino\views\dashboard\index.php on line 62
+[25-Jun-2022 22:03:29 UTC] PHP Stack trace:
+[25-Jun-2022 22:03:29 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[25-Jun-2022 22:03:29 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[25-Jun-2022 22:03:29 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
+[25-Jun-2022 22:03:29 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$9bTmHyZcdiT/gnzPMVWxOO6fs1I9OJNn4dw5q4hboQdn8ITeMbf7a'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
+[25-Jun-2022 22:03:29 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[25-Jun-2022 22:03:29 UTC] PHP Notice:  Undefined variable: saldo in C:\wamp64\www\casino\views\dashboard\index.php on line 80
+[25-Jun-2022 22:03:29 UTC] PHP Stack trace:
+[25-Jun-2022 22:03:29 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[25-Jun-2022 22:03:29 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[25-Jun-2022 22:03:29 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
+[25-Jun-2022 22:03:29 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$9bTmHyZcdiT/gnzPMVWxOO6fs1I9OJNn4dw5q4hboQdn8ITeMbf7a'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
+[25-Jun-2022 22:03:29 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16

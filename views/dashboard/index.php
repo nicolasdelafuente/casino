@@ -2,7 +2,7 @@
     $movimientos = $data['expenses'];
     $amount = $data['amount'];
     $dineroApostado = $data['dineroApostado'];
-    $dineroApostado = 0;
+    $dineroGanado = 0;
 
     var_dump($dineroApostado);
 ?>

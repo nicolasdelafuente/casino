@@ -79,7 +79,7 @@
                     <tr>
                       <?php $saldo = $saldo + $value->getAmount() ?>
                       <td><?php echo $value->getDate() ?></td>  
-                      <td><?php echo $value->getTitle() ?></td> 
+                      <td><?php echo $value->getCategoryId() ?></td> 
                       <td class="text-end">$ <?php echo number_format($value->getAmount(),2) ?></td>
                       <td class="text-end">$ <?php echo number_format($saldo,2) ?></td>
                       </tr>

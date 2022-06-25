@@ -7,7 +7,7 @@
   ini_set('display_errors', FALSE); // Error/Exception display, use FALSE only in production environment or real server. Use TRUE in development environment
 
   ini_set('log_errors', TRUE); // Error/Exception file logging engine.
-  ini_set('error_log', 'C:\wamp64\www\casino\errors.log'); // Logging file path
+  ini_set('error_log', 'C:\wamp64\www\casino\error\errors.log'); // Logging file path
 
   error_log("- - - - - - - Inicio de aplicación web - - - - - - -");
 

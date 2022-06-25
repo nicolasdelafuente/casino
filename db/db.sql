@@ -32,31 +32,26 @@ CREATE TABLE expenses (
 
 
 INSERT INTO categories (id, name, color) VALUES
-(1, 'comida', '#DE1F59'),
-(2, 'hogar', '#DE1FAA'),
-(3, 'ropa', '#B01FDE'),
-(4, 'Juegos', '#681FDE'),
-(5, 'Viajes', '#1FAADE');
+(1, 'Ingreso de dinero', '#DE1F59'),
+(2, 'Egreso de dinero', '#DE1FAA'),
+(3, 'Apuesta', '#B01FDE'),
+(4, 'Retorno Apuesta', '#681FDE'),
+(5, 'Egreso Rockola', '#1FAADE');
 
 
-INSERT INTO expenses (id, title, category_id, amount, date, id_user) VALUES
-(1, 'prueba', 3, 12.40, '2020-03-21', 5),
-(2, 'starbucks', 1, 60.00, '2020-03-21', 5),
-(4, 'Regalo de cumpleaños mamá', 2, 1200.00, '2020-03-22', 5),
-(5, 'Nintendo Switch', 4, 4600.00, '2020-03-26', 5),
-(6, 'Viaje a Nueva York', 5, 20000.00, '2020-01-25', 5),
-(7, 'Chocolates Ferrero', 1, 140.00, '2020-03-27', 5),
-(10, 'sdsdsd', 1, 2323.00, '2020-04-03', 5),
-(11, 'sadas', 1, 232.00, '2020-04-03', 5),
-(12, 'sadas', 3, 11.00, '2020-04-03', 5),
-(13, 'sdsd', 5, 23.00, '2020-04-03', 5),
-(14, 'sdsd', 5, 23.00, '2020-04-03', 5),
-(19, 'Chilis', 1, 300.00, '2020-01-01', 5),
-(20, 'juego de Halo', 4, 1100.00, '2020-04-04', 5),
-(21, 'Uñas', 3, 200.00, '2020-04-09', 6),
-(23, 'pastillas para la tos', 2, 21.00, '2020-06-06', 5),
-(24, 'Ropa nueva', 3, 300.00, '2020-06-04', 5),
-(25, 'juego Nintendo', 2, 200.00, '2020-07-12', 5);
+INSERT INTO expenses (id, category_id, amount, date, id_user) VALUES
+(1, 1, 1000, '2022-06-20', 1),
+(2, 3, -100, '2020-03-21', 1),
+(4, 4, 150, '2020-03-22', 1),
+(5, 3, -200, '2020-03-26', 1),
+(6, 5, -10, '2020-01-25', 1),
+(7, 4, 0, '2020-03-27', 1),
+(10, 1, 1050, '2020-04-03', 1),
+(11, 3, -500, '2020-04-03', 1),
+(12, 5, -10, '2020-04-03', 1),
+(13, 5, -10, '2020-04-03', 1),
+(14, 3, -200, '2020-04-03', 1),
+(19, 4, 0, '2020-01-01', 1);
 
 
 ALTER TABLE categories
@@ -85,7 +80,7 @@ ALTER TABLE expenses
 -- AUTO_INCREMENT for table users
 --
 ALTER TABLE users
-  MODIFY id int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY id int(11) NOT NULL AUTO_INCREMENT;
 
 
   ALTER TABLE expenses

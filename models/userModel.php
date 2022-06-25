@@ -72,7 +72,7 @@ class UserModel extends Model implements IModel{
       $this->username = $user['username'];
       $this->name = $user['name'];
       $this->role = $user['role'];
-      $this->password = $user['password'];
+      $this->setPassword($user['password'], true);
 
       return $this;
     }catch(PDOException $e){
@@ -141,8 +141,7 @@ class UserModel extends Model implements IModel{
   public function setUsername($username){ $this->username = $username;}
   public function setName($name){         $this->name = $name;}
   public function setRole($role){         $this->role = $role;}
-  public function setPassword($password){ $this->password = $password;}
-  /*
+  //public function setPassword($password){ $this->password = $password;}
   public function setPassword($password, $hash = true){ 
     if($hash){
       $this->password = $this->getHashedPassword($password);
@@ -150,7 +149,6 @@ class UserModel extends Model implements IModel{
       $this->password = $password;
     }
   }
-  */
   public function getId(){        return $this->id;}
   public function getUsername(){  return $this->username;}
   public function getName(){      return $this->name;}  

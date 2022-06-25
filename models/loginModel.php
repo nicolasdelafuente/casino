@@ -23,8 +23,7 @@
 
             error_log('login: user id '.$user->getId());
 
-            //if(password_verify($password, $user->getPassword())){
-            if($password === $user->getPassword()){
+            if(password_verify($password, $user->getPassword())){
               error_log('login: success');
               //return ['id' => $item['id'], 'username' => $item['username'], 'role' => $item['role']];
               return $user;

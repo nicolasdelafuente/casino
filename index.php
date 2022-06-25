@@ -1,5 +1,5 @@
 <?php
-  require_once 'libs/error_reporting.php';
+  require_once 'error/error_reporting.php';
   
   require_once 'libs/database.php';
 

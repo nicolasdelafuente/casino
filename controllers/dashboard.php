@@ -1,4 +1,5 @@
 <?php
+  require_once 'models/joinExpensesCategoriesModel.php';
 
   class Dashboard extends SessionController {
     
@@ -16,30 +17,24 @@
       error_log('DASHBOARD::RENDER-> Carga el index de Dashboard');
       
       $expenses         = $this->getExpenses();
-      $amount           = $this->getTotalAmoun();
-      $dineroApostado    = $this->getDineroApostado();
+      $amount           = $this->getTotalAmount();
 
       $this->view->render('dashboard/index', [
-        'user'                 => $this->user,
-        'expenses'             => $expenses,
-        'amount'               => $amount,
-        'dineroApostado '      => $dineroApostado
+        'title'                 => 'Dasboard',
+        'user'                  => $this->user,
+        'amount'                => $amount,
+        'expenses'              => $expenses,
       ]);
-    }
+    }   
 
     public function getExpenses() {     
-      $expenses = new ExpensesModel();
-      return $expenses->getAllByUserId($this->user->getId());  
+      $expenses = new JoinExpensesCategoriesModel();
+      return $expenses->getAll($this->user->getId());  
     }
 
-    public function getTotalAmoun() {
+    public function getTotalAmount() {
       $expenses = new ExpensesModel();
       return $expenses->getTotalAmount($this->user->getId());
-    }
-
-    public function getDineroApostado() {
-      $expenses = new ExpensesModel();
-      return $expenses->getTotalApostado($this->user->getId());
     }
 
     

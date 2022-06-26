@@ -1,25 +1,44 @@
 <?php
+    $title = $data['title'];
     $movimientos = $data['expenses'];
-    $amount = $data['amount'];
-    $dineroApostado = $data['dineroApostado'];
-    $dineroGanado = 0;
+    $monto = $data['amount'];
 
-    var_dump($dineroApostado);
+    $dineroApostado = 0;
+    $dineroRetornado = 0;
+    $dineroGanado = 0;
+    
+    foreach ($movimientos as $movimiento => $value)  {
+      if ($value->getCategoryId() == 3) {
+        $dineroApostado = ($dineroApostado + $value->getAmount());
+      }
+
+      if ($value->getCategoryId() == 4) {
+        $dineroRetornado = ($dineroRetornado + $value->getAmount())*-1;
+      }
+    }
+    $dineroGanado = $dineroApostado - $dineroRetornado;
+
+    $dineroApostado =  $dineroApostado * -1;
+
+    
+
+    if(isset($_POST['Submit3']))
+    { 
+    session_destroy();
+    }
 ?>
 
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard |Casino</title>
-    <link rel="shortcut icon" href="<?php URL?>img/icon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  </head>
-  <body>
+
+<FORM method="POST">
+        <input type="submit" name="Submit3" value="Destroy Session">
+      </FORM>
+  
+
+
+<input type="submit" name="Submit3" value="Destroy Session">
     <div class="container ">
-      <div class="row d-flex text-center justify-content-center">
+      <div class="row mt-3 d-flex text-center justify-content-center">
         <div class="col-md-10">
           <div class="row">
             <h1>Este es la vista del Dashboard</h1>
@@ -36,7 +55,7 @@
                         <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
                       </svg>
                   </h5>
-                  <h1 class="card-text"><?php echo number_format($amount,2) ?></h1>
+                  <h1 class="card-text"><?php echo number_format($monto,2) ?></h1>
                 </div>
             </div>
             <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
@@ -67,21 +86,34 @@
           <table class="table table-hover">
               <thead>
                 <tr>
+                  <th></th>
                   <th scope="col">Fecha</th>
                   <th scope="col">Movimiento</th>
                   <th scope="col" class="text-end">Importe</th>
                   <th scope="col" class="text-end">Saldo</th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
                   <?php 
+                    $saldo = 0;
                     foreach ($movimientos as $movimiento => $value) { ?>
-                    <tr>
-                      <?php $saldo = $saldo + $value->getAmount() ?>
-                      <td><?php echo $value->getDate() ?></td>  
-                      <td><?php echo $value->getCategoryId() ?></td> 
-                      <td class="text-end">$ <?php echo number_format($value->getAmount(),2) ?></td>
-                      <td class="text-end">$ <?php echo number_format($saldo,2) ?></td>
+                      <tr>
+                        <?php $saldo = $saldo + $value->getAmount() ?>
+                        <td>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="<?php echo $value->getColor() ?>" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                          </svg>
+                        </td>
+                        <td><?php echo $value->getDate() ?></td>  
+                        <td><?php echo $value->getNameCategory() ?></td> 
+                        <td class="text-end">$ <?php echo number_format($value->getAmount(),2) ?></td>
+                        <td class="text-end">$ <?php echo number_format($saldo,2) ?></td>
+                        <td class="text-end">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="<?php echo $value->getColor() ?>"  class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                          </svg>
+                        </td>
                       </tr>
                   <?php } ?>              
               </tbody>
@@ -93,10 +125,5 @@
   
     
     
+<?php include_once 'views/include/footer.php'?>
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  
-  </body>
-</html>

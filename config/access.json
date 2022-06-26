@@ -16,6 +16,11 @@
       "role" : "user"
     },
     {
+      "site" : "jugar", 
+      "access" : "private", 
+      "role" : "user"
+    },
+    {
       "site" : "expenses", 
       "access" : "private", 
       "role" : "user"

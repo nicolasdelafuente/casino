@@ -4,9 +4,6 @@ DROP TABLE IF EXISTS expenses;
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS categories;
 
-
-
-
 CREATE TABLE IF NOT EXISTS users (
   id int(11) NOT NULL,
   username varchar(50) NOT NULL,
@@ -32,26 +29,26 @@ CREATE TABLE expenses (
 
 
 INSERT INTO categories (id, name, color) VALUES
-(1, 'Ingreso de dinero', '#DE1F59'),
-(2, 'Egreso de dinero', '#DE1FAA'),
-(3, 'Apuesta', '#B01FDE'),
+(1, 'Ingreso de dinero', '#044E0A'),
+(2, 'Egreso de dinero', '#FF0000'),
+(3, 'Apuesta', '#FF0073'),
 (4, 'Retorno Apuesta', '#681FDE'),
-(5, 'Egreso Rockola', '#1FAADE');
+(5, 'Egreso Rockola', '#221FDE');
 
 
 INSERT INTO expenses (id, category_id, amount, date, id_user) VALUES
 (1, 1, 1000, '2022-06-20', 1),
-(2, 3, -100, '2020-03-21', 1),
-(4, 4, 150, '2020-03-22', 1),
-(5, 3, -200, '2020-03-26', 1),
-(6, 5, -10, '2020-01-25', 1),
-(7, 4, 0, '2020-03-27', 1),
-(10, 1, 1050, '2020-04-03', 1),
-(11, 3, -500, '2020-04-03', 1),
-(12, 5, -10, '2020-04-03', 1),
-(13, 5, -10, '2020-04-03', 1),
-(14, 3, -200, '2020-04-03', 1),
-(19, 4, 0, '2020-01-01', 1);
+(2, 3, -100, '2022-06-20', 1),
+(4, 4, 150, '2022-06-20', 1),
+(5, 3, -200, '2022-06-21', 1),
+(6, 5, -10, '2022-06-21', 1),
+(7, 4, 0, '2022-06-21', 1),
+(10, 1, 1050, '2022-06-24', 1),
+(11, 3, -500, '2022-06-24', 1),
+(12, 5, -10, '2022-06-24', 1),
+(13, 5, -10, '2022-06-24', 1),
+(14, 3, -200, '2022-06-24', 1),
+(19, 4, 0, '2022-06-24', 1);
 
 
 ALTER TABLE categories
@@ -67,14 +64,14 @@ ALTER TABLE categories
   ADD UNIQUE KEY username (username);
 
 
-  ALTER TABLE categories
-  MODIFY id int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+ALTER TABLE categories
+  MODIFY id int(5) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table expenses
 --
 ALTER TABLE expenses
-  MODIFY id int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY id int(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table users
@@ -83,7 +80,6 @@ ALTER TABLE users
   MODIFY id int(11) NOT NULL AUTO_INCREMENT;
 
 
-  ALTER TABLE expenses
+ALTER TABLE expenses
   ADD CONSTRAINT id_category_expense FOREIGN KEY (category_id) REFERENCES categories (id),
   ADD CONSTRAINT id_user_expense FOREIGN KEY (id_user) REFERENCES users (id);
-COMMIT;

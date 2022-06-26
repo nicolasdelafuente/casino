@@ -1,260 +1,2186 @@
-[25-Jun-2022 22:07:43 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
-[25-Jun-2022 22:07:43 UTC] APP::CONSTRUCT-> Controlador: dashboard
-[25-Jun-2022 22:07:43 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
-[25-Jun-2022 22:07:43 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
-[25-Jun-2022 22:07:43 UTC] SessionController::validateSession()
-[25-Jun-2022 22:07:43 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:07:43 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:07:43 UTC] sessionController::validateSession(): username:zalocin - role: user
-[25-Jun-2022 22:07:43 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:07:43 UTC] sessionController::isPublic(): currentURL => dashboard
-[25-Jun-2022 22:07:43 UTC] FALSE
-[25-Jun-2022 22:07:43 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:07:43 UTC] SessionController::validateSession() => autorizado, lo deja pasar
-[25-Jun-2022 22:07:43 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:07:43 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:07:43 UTC] Dashboard::constructor() 
-[25-Jun-2022 22:07:43 UTC] CONTROLLER::loadModel-> dashboard
-[25-Jun-2022 22:07:43 UTC] APP::CONSTRUCT-> Se carga el método default
-[25-Jun-2022 22:07:43 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:07:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:07:43 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:07:43 UTC] VIEW::RENDER-> dashboard/index
-[25-Jun-2022 22:07:43 UTC] VIEW::handleMessages
-[25-Jun-2022 22:07:43 UTC] PHP Notice:  Undefined index: dineroApostado in C:\wamp64\www\casino\views\dashboard\index.php on line 4
-[25-Jun-2022 22:07:43 UTC] PHP Stack trace:
-[25-Jun-2022 22:07:43 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:07:43 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:07:43 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:07:43 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$hozZ.udRi0PCPphBIbDOc.Php0HwCccelqAD2Ukar.G9cnPUimH/S'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:07:43 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:07:43 UTC] VIEW::showMessages
-[25-Jun-2022 22:07:43 UTC] VIEW::showError
-[25-Jun-2022 22:07:43 UTC] VIEW::showSuccess
-[25-Jun-2022 22:07:43 UTC] PHP Notice:  Undefined variable: saldo in C:\wamp64\www\casino\views\dashboard\index.php on line 80
-[25-Jun-2022 22:07:43 UTC] PHP Stack trace:
-[25-Jun-2022 22:07:43 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:07:43 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:07:43 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:07:43 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$hozZ.udRi0PCPphBIbDOc.Php0HwCccelqAD2Ukar.G9cnPUimH/S'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:07:43 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:11:52 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
-[25-Jun-2022 22:11:52 UTC] APP::CONSTRUCT-> Controlador: dashboard
-[25-Jun-2022 22:11:52 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
-[25-Jun-2022 22:11:52 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
-[25-Jun-2022 22:11:52 UTC] SessionController::validateSession()
-[25-Jun-2022 22:11:52 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:11:52 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:11:52 UTC] sessionController::validateSession(): username:zalocin - role: user
-[25-Jun-2022 22:11:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:11:52 UTC] sessionController::isPublic(): currentURL => dashboard
-[25-Jun-2022 22:11:52 UTC] FALSE
-[25-Jun-2022 22:11:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:11:52 UTC] SessionController::validateSession() => autorizado, lo deja pasar
-[25-Jun-2022 22:11:52 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:11:52 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:11:52 UTC] Dashboard::constructor() 
-[25-Jun-2022 22:11:52 UTC] CONTROLLER::loadModel-> dashboard
-[25-Jun-2022 22:11:52 UTC] APP::CONSTRUCT-> Se carga el método default
-[25-Jun-2022 22:11:52 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:11:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:11:52 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:11:52 UTC] VIEW::RENDER-> dashboard/index
-[25-Jun-2022 22:11:52 UTC] VIEW::handleMessages
-[25-Jun-2022 22:11:52 UTC] PHP Notice:  Undefined index: dineroApostado in C:\wamp64\www\casino\views\dashboard\index.php on line 4
-[25-Jun-2022 22:11:52 UTC] PHP Stack trace:
-[25-Jun-2022 22:11:52 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:11:52 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:11:52 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:11:52 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$oFbmN/0pwXWjeBdVW.liseh86keTpvgFfr20TaSInK7qJRitTv7D.'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:11:52 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:11:52 UTC] VIEW::showMessages
-[25-Jun-2022 22:11:52 UTC] VIEW::showError
-[25-Jun-2022 22:11:52 UTC] VIEW::showSuccess
-[25-Jun-2022 22:11:52 UTC] PHP Notice:  Undefined variable: saldo in C:\wamp64\www\casino\views\dashboard\index.php on line 80
-[25-Jun-2022 22:11:52 UTC] PHP Stack trace:
-[25-Jun-2022 22:11:52 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:11:52 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:11:52 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:11:52 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$oFbmN/0pwXWjeBdVW.liseh86keTpvgFfr20TaSInK7qJRitTv7D.'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:11:52 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:11:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ExpensesModel::getTitle() in C:\wamp64\www\casino\views\dashboard\index.php:82
-Stack trace:
-#0 C:\wamp64\www\casino\libs\view.php(16): require()
-#1 C:\wamp64\www\casino\controllers\dashboard.php(26): View->render('dashboard/index', Array)
-#2 C:\wamp64\www\casino\libs\app.php(59): Dashboard->render()
-#3 C:\wamp64\www\casino\index.php(16): App->__construct()
-#4 {main}
-  thrown in C:\wamp64\www\casino\views\dashboard\index.php on line 82
-[25-Jun-2022 22:12:31 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
-[25-Jun-2022 22:12:31 UTC] APP::CONSTRUCT-> Controlador: dashboard
-[25-Jun-2022 22:12:31 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
-[25-Jun-2022 22:12:31 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
-[25-Jun-2022 22:12:31 UTC] SessionController::validateSession()
-[25-Jun-2022 22:12:31 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:12:31 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:12:31 UTC] sessionController::validateSession(): username:zalocin - role: user
-[25-Jun-2022 22:12:31 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:12:31 UTC] sessionController::isPublic(): currentURL => dashboard
-[25-Jun-2022 22:12:31 UTC] FALSE
-[25-Jun-2022 22:12:31 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:12:31 UTC] SessionController::validateSession() => autorizado, lo deja pasar
-[25-Jun-2022 22:12:31 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:12:31 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:12:31 UTC] Dashboard::constructor() 
-[25-Jun-2022 22:12:31 UTC] CONTROLLER::loadModel-> dashboard
-[25-Jun-2022 22:12:31 UTC] APP::CONSTRUCT-> Se carga el método default
-[25-Jun-2022 22:12:31 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:12:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:12:31 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:12:31 UTC] VIEW::RENDER-> dashboard/index
-[25-Jun-2022 22:12:31 UTC] VIEW::handleMessages
-[25-Jun-2022 22:12:31 UTC] PHP Notice:  Undefined index: dineroApostado in C:\wamp64\www\casino\views\dashboard\index.php on line 4
-[25-Jun-2022 22:12:31 UTC] PHP Stack trace:
-[25-Jun-2022 22:12:31 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:12:31 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:12:31 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:12:31 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$Jl0UK35aG/bzBH1NeVXSw.yvPgHQM0VKx3Bq2L3/0l.sSPnwYrOEm'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:12:31 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:12:31 UTC] VIEW::showMessages
-[25-Jun-2022 22:12:31 UTC] VIEW::showError
-[25-Jun-2022 22:12:31 UTC] VIEW::showSuccess
-[25-Jun-2022 22:12:31 UTC] PHP Notice:  Undefined variable: saldo in C:\wamp64\www\casino\views\dashboard\index.php on line 80
-[25-Jun-2022 22:12:31 UTC] PHP Stack trace:
-[25-Jun-2022 22:12:31 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:12:31 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:12:31 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:12:31 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$Jl0UK35aG/bzBH1NeVXSw.yvPgHQM0VKx3Bq2L3/0l.sSPnwYrOEm'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:12:31 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:12:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ExpensesModel::getCategory() in C:\wamp64\www\casino\views\dashboard\index.php:82
-Stack trace:
-#0 C:\wamp64\www\casino\libs\view.php(16): require()
-#1 C:\wamp64\www\casino\controllers\dashboard.php(26): View->render('dashboard/index', Array)
-#2 C:\wamp64\www\casino\libs\app.php(59): Dashboard->render()
-#3 C:\wamp64\www\casino\index.php(16): App->__construct()
-#4 {main}
-  thrown in C:\wamp64\www\casino\views\dashboard\index.php on line 82
-[25-Jun-2022 22:13:00 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
-[25-Jun-2022 22:13:00 UTC] APP::CONSTRUCT-> Controlador: dashboard
-[25-Jun-2022 22:13:00 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
-[25-Jun-2022 22:13:00 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
-[25-Jun-2022 22:13:00 UTC] SessionController::validateSession()
-[25-Jun-2022 22:13:00 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:13:00 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:13:00 UTC] sessionController::validateSession(): username:zalocin - role: user
-[25-Jun-2022 22:13:00 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:13:00 UTC] sessionController::isPublic(): currentURL => dashboard
-[25-Jun-2022 22:13:00 UTC] FALSE
-[25-Jun-2022 22:13:00 UTC] sessionController::getCurrentPage(): actualLink =>/casino/dashboard, url => dashboard
-[25-Jun-2022 22:13:00 UTC] SessionController::validateSession() => autorizado, lo deja pasar
-[25-Jun-2022 22:13:00 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:13:00 UTC] sessionController::getUserSessionData(): zalocin
-[25-Jun-2022 22:13:00 UTC] Dashboard::constructor() 
-[25-Jun-2022 22:13:00 UTC] CONTROLLER::loadModel-> dashboard
-[25-Jun-2022 22:13:00 UTC] APP::CONSTRUCT-> Se carga el método default
-[25-Jun-2022 22:13:00 UTC] DASHBOARD::RENDER-> Carga el index de Dashboard
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:13:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
-[25-Jun-2022 22:13:00 UTC] Conexión a BD exitosa
-[25-Jun-2022 22:13:00 UTC] VIEW::RENDER-> dashboard/index
-[25-Jun-2022 22:13:00 UTC] VIEW::handleMessages
-[25-Jun-2022 22:13:00 UTC] PHP Notice:  Undefined index: dineroApostado in C:\wamp64\www\casino\views\dashboard\index.php on line 4
-[25-Jun-2022 22:13:00 UTC] PHP Stack trace:
-[25-Jun-2022 22:13:00 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:13:00 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:13:00 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:13:00 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$E8Bb3FmtQ7VHEXBYHci7yu1yfFYtZeNZ9tnok79Izl94h7KTf58Ue'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:13:00 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
-[25-Jun-2022 22:13:00 UTC] VIEW::showMessages
-[25-Jun-2022 22:13:00 UTC] VIEW::showError
-[25-Jun-2022 22:13:00 UTC] VIEW::showSuccess
-[25-Jun-2022 22:13:00 UTC] PHP Notice:  Undefined variable: saldo in C:\wamp64\www\casino\views\dashboard\index.php on line 80
-[25-Jun-2022 22:13:00 UTC] PHP Stack trace:
-[25-Jun-2022 22:13:00 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
-[25-Jun-2022 22:13:00 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
-[25-Jun-2022 22:13:00 UTC] PHP   3. Dashboard->render() C:\wamp64\www\casino\libs\app.php:59
-[25-Jun-2022 22:13:00 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['user' => class UserModel { private $id = 1; private $username = 'zalocin'; private $name = ''; private $role = 'user'; private $password = '$2y$10$E8Bb3FmtQ7VHEXBYHci7yu1yfFYtZeNZ9tnok79Izl94h7KTf58Ue'; public $db = class Database { ... } }, 'expenses' => [0 => class ExpensesModel { ... }, 1 => class ExpensesModel { ... }, 2 => class ExpensesModel { ... }, 3 => class ExpensesModel { ... }, 4 => class ExpensesModel { ... }, 5 => class ExpensesModel { ... }, 6 => class ExpensesModel { ... }, 7 => class ExpensesModel { ... }, 8 => class ExpensesModel { ... }, 9 => class ExpensesModel { ... }, 10 => class ExpensesModel { ... }, 11 => class ExpensesModel { ... }], 'amount' => 1170, 'dineroApostado ' => -1000]) C:\wamp64\www\casino\controllers\dashboard.php:26
-[25-Jun-2022 22:13:00 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 14:54:26 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 14:54:26 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 14:54:26 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 14:54:26 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 14:54:26 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 14:54:26 UTC] SessionController::validateSession()
+[26-Jun-2022 14:54:26 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 14:54:26 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 14:54:26 UTC] Conexión a BD exitosa
+[26-Jun-2022 14:54:27 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 14:54:27 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 14:54:27 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 14:54:27 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 14:54:27 UTC] FALSE
+[26-Jun-2022 14:54:27 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 14:54:27 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 14:54:27 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 14:54:27 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 14:54:27 UTC] Conexión a BD exitosa
+[26-Jun-2022 14:54:27 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 14:54:27 UTC] JUGAR::constructor() 
+[26-Jun-2022 14:54:27 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 14:54:27 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 14:54:27 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 14:54:27 UTC] VIEW::RENDER-> dashboard/index
+[26-Jun-2022 14:54:27 UTC] VIEW::handleMessages
+[26-Jun-2022 14:54:27 UTC] PHP Notice:  Undefined index: expenses in C:\wamp64\www\casino\views\dashboard\index.php on line 3
+[26-Jun-2022 14:54:27 UTC] PHP Stack trace:
+[26-Jun-2022 14:54:27 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 14:54:27 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 14:54:27 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 14:54:27 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 14:54:27 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 14:54:27 UTC] PHP Notice:  Undefined index: amount in C:\wamp64\www\casino\views\dashboard\index.php on line 4
+[26-Jun-2022 14:54:27 UTC] PHP Stack trace:
+[26-Jun-2022 14:54:27 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 14:54:27 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 14:54:27 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 14:54:27 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 14:54:27 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 14:54:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp64\www\casino\views\dashboard\index.php on line 10
+[26-Jun-2022 14:54:27 UTC] PHP Stack trace:
+[26-Jun-2022 14:54:27 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 14:54:27 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 14:54:27 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 14:54:27 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 14:54:27 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 14:54:27 UTC] VIEW::showMessages
+[26-Jun-2022 14:54:27 UTC] VIEW::showError
+[26-Jun-2022 14:54:27 UTC] VIEW::showSuccess
+[26-Jun-2022 14:54:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp64\www\casino\views\dashboard\index.php on line 100
+[26-Jun-2022 14:54:27 UTC] PHP Stack trace:
+[26-Jun-2022 14:54:27 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 14:54:27 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 14:54:27 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 14:54:27 UTC] PHP   4. View->render($nombre = 'dashboard/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 14:54:27 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 14:54:54 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 14:54:54 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 14:54:54 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 14:54:54 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 14:54:54 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 14:54:54 UTC] SessionController::validateSession()
+[26-Jun-2022 14:54:54 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 14:54:54 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 14:54:54 UTC] Conexión a BD exitosa
+[26-Jun-2022 14:54:54 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 14:54:54 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 14:54:54 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 14:54:54 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 14:54:54 UTC] FALSE
+[26-Jun-2022 14:54:54 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 14:54:54 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 14:54:54 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 14:54:54 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 14:54:54 UTC] Conexión a BD exitosa
+[26-Jun-2022 14:54:54 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 14:54:54 UTC] JUGAR::constructor() 
+[26-Jun-2022 14:54:54 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 14:54:54 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 14:54:54 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 14:54:54 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 14:54:54 UTC] VIEW::handleMessages
+[26-Jun-2022 15:02:52 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:02:52 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:02:52 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:02:52 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:02:52 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:02:52 UTC] SessionController::validateSession()
+[26-Jun-2022 15:02:52 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:02:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:02:52 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:02:52 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:02:52 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:02:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:02:52 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:02:52 UTC] FALSE
+[26-Jun-2022 15:02:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:02:52 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:02:52 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:02:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:02:52 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:02:52 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:02:52 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:02:52 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:02:52 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:02:52 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:02:52 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:02:52 UTC] VIEW::handleMessages
+[26-Jun-2022 15:08:40 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:08:40 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:08:40 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:08:40 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:08:40 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:08:40 UTC] SessionController::validateSession()
+[26-Jun-2022 15:08:40 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:08:40 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:08:40 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:08:41 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:08:41 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:08:41 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:08:41 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:08:41 UTC] FALSE
+[26-Jun-2022 15:08:41 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:08:41 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:08:41 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:08:41 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:08:41 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:08:41 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:08:41 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:08:41 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:08:41 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:08:41 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:08:41 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:08:41 UTC] VIEW::handleMessages
+[26-Jun-2022 15:09:11 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:09:11 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:09:11 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:09:11 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:09:11 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:09:11 UTC] SessionController::validateSession()
+[26-Jun-2022 15:09:11 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:09:11 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:09:11 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:09:11 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:09:11 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:09:11 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:09:11 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:09:11 UTC] FALSE
+[26-Jun-2022 15:09:11 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:09:11 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:09:11 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:09:11 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:09:11 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:09:11 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:09:11 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:09:11 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:09:11 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:09:11 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:09:11 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:09:11 UTC] VIEW::handleMessages
+[26-Jun-2022 15:09:30 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:09:30 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:09:30 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:09:30 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:09:30 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:09:30 UTC] SessionController::validateSession()
+[26-Jun-2022 15:09:30 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:09:30 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:09:30 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:09:30 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:09:30 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:09:30 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:09:30 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:09:30 UTC] FALSE
+[26-Jun-2022 15:09:30 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:09:30 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:09:30 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:09:30 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:09:30 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:09:30 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:09:30 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:09:30 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:09:30 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:09:30 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:09:30 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:09:30 UTC] VIEW::handleMessages
+[26-Jun-2022 15:13:20 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:13:20 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:13:20 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:20 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:13:20 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:13:20 UTC] SessionController::validateSession()
+[26-Jun-2022 15:13:20 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:13:20 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:20 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:13:21 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:13:21 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:13:21 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:13:21 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:13:21 UTC] FALSE
+[26-Jun-2022 15:13:21 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:13:21 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:13:21 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:13:21 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:21 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:13:21 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:13:21 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:13:21 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:13:21 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:13:21 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:13:21 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:13:21 UTC] VIEW::handleMessages
+[26-Jun-2022 15:13:35 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:13:35 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:13:35 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:35 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:13:35 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:13:35 UTC] SessionController::validateSession()
+[26-Jun-2022 15:13:35 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:13:35 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:36 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:13:36 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:13:36 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:13:36 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:13:36 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:13:36 UTC] FALSE
+[26-Jun-2022 15:13:36 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:13:36 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:13:36 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:13:36 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:36 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:13:36 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:13:36 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:13:36 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:13:36 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:13:36 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:13:36 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:13:36 UTC] VIEW::handleMessages
+[26-Jun-2022 15:13:41 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:13:41 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:13:41 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:41 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:13:41 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:13:41 UTC] SessionController::validateSession()
+[26-Jun-2022 15:13:41 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:13:41 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:41 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:13:41 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:13:41 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:13:41 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:13:41 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:13:41 UTC] FALSE
+[26-Jun-2022 15:13:41 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:13:41 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:13:41 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:13:41 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:13:41 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:13:41 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:13:41 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:13:41 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:13:41 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:13:41 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:13:41 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:13:41 UTC] VIEW::handleMessages
+[26-Jun-2022 15:14:32 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:14:32 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:14:32 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:32 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:14:32 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:14:32 UTC] SessionController::validateSession()
+[26-Jun-2022 15:14:32 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:14:32 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:32 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:14:32 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:14:32 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:14:32 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:14:32 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:14:32 UTC] FALSE
+[26-Jun-2022 15:14:32 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:14:32 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:14:32 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:14:32 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:32 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:14:32 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:14:32 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:14:32 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:14:32 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:14:32 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:14:32 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:14:32 UTC] VIEW::handleMessages
+[26-Jun-2022 15:14:33 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:14:33 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:14:33 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:33 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:14:33 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:14:33 UTC] SessionController::validateSession()
+[26-Jun-2022 15:14:33 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:14:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:33 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:14:34 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:14:34 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:14:34 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:14:34 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:14:34 UTC] FALSE
+[26-Jun-2022 15:14:34 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:14:34 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:14:34 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:14:34 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:34 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:14:34 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:14:34 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:14:34 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:14:34 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:14:34 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:14:34 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:14:34 UTC] VIEW::handleMessages
+[26-Jun-2022 15:14:42 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:14:42 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:14:42 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:42 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:14:42 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:14:42 UTC] SessionController::validateSession()
+[26-Jun-2022 15:14:42 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:14:42 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:42 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:14:42 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:14:42 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:14:42 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:14:42 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:14:42 UTC] FALSE
+[26-Jun-2022 15:14:42 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:14:42 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:14:42 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:14:42 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:14:42 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:14:42 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:14:42 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:14:42 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:14:42 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:14:42 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:14:42 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:14:42 UTC] VIEW::handleMessages
+[26-Jun-2022 15:15:50 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:15:50 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:15:50 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:15:50 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:15:50 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:15:50 UTC] SessionController::validateSession()
+[26-Jun-2022 15:15:50 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:15:50 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:15:50 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:15:50 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:15:50 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:15:50 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:15:50 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:15:50 UTC] FALSE
+[26-Jun-2022 15:15:50 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:15:50 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:15:50 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:15:50 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:15:50 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:15:50 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:15:50 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:15:50 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:15:50 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:15:50 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:15:50 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:15:50 UTC] VIEW::handleMessages
+[26-Jun-2022 15:17:02 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:17:02 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:17:02 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:02 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:17:02 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:17:02 UTC] SessionController::validateSession()
+[26-Jun-2022 15:17:02 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:02 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:02 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:02 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:02 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:17:02 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:02 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:17:02 UTC] FALSE
+[26-Jun-2022 15:17:02 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:02 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:17:02 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:02 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:02 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:02 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:02 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:17:02 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:17:02 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:17:02 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:17:02 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:17:02 UTC] VIEW::handleMessages
+[26-Jun-2022 15:17:10 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:17:10 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:17:10 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:10 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:17:10 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:17:10 UTC] SessionController::validateSession()
+[26-Jun-2022 15:17:10 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:10 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:10 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:10 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:10 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:17:10 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:10 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:17:10 UTC] FALSE
+[26-Jun-2022 15:17:10 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:10 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:17:10 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:10 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:10 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:11 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:11 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:17:11 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:17:11 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:17:11 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:17:11 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:17:11 UTC] VIEW::handleMessages
+[26-Jun-2022 15:17:24 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:17:24 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:17:24 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:24 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:17:24 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:17:24 UTC] SessionController::validateSession()
+[26-Jun-2022 15:17:24 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:24 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:24 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:24 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:24 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:17:24 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:24 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:17:24 UTC] FALSE
+[26-Jun-2022 15:17:24 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:24 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:17:24 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:24 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:24 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:24 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:24 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:17:24 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:17:24 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:17:24 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:17:24 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:17:24 UTC] VIEW::handleMessages
+[26-Jun-2022 15:17:45 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:17:45 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:17:45 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:45 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:17:45 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:17:45 UTC] SessionController::validateSession()
+[26-Jun-2022 15:17:45 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:45 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:45 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:45 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:45 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:17:45 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:45 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:17:45 UTC] FALSE
+[26-Jun-2022 15:17:45 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:45 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:17:45 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:45 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:45 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:45 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:45 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:17:45 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:17:45 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:17:45 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:17:45 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:17:45 UTC] VIEW::handleMessages
+[26-Jun-2022 15:17:59 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:17:59 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:17:59 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:59 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:17:59 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:17:59 UTC] SessionController::validateSession()
+[26-Jun-2022 15:17:59 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:59 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:59 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:59 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:59 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:17:59 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:59 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:17:59 UTC] FALSE
+[26-Jun-2022 15:17:59 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:17:59 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:17:59 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:17:59 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:17:59 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:17:59 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:17:59 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:17:59 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:17:59 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:17:59 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:17:59 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:17:59 UTC] VIEW::handleMessages
+[26-Jun-2022 15:18:44 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:18:44 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:18:44 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:18:44 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:18:44 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:18:44 UTC] SessionController::validateSession()
+[26-Jun-2022 15:18:44 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:18:44 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:18:44 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:18:44 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:18:44 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:18:44 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:18:44 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:18:44 UTC] FALSE
+[26-Jun-2022 15:18:44 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:18:44 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:18:44 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:18:44 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:18:44 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:18:44 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:18:44 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:18:44 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:18:44 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:18:44 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:18:44 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:18:44 UTC] VIEW::handleMessages
+[26-Jun-2022 15:19:12 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:19:12 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:19:12 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:12 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:19:12 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:19:12 UTC] SessionController::validateSession()
+[26-Jun-2022 15:19:12 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:19:12 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:12 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:19:12 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:19:12 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:19:12 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:19:12 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:19:12 UTC] FALSE
+[26-Jun-2022 15:19:12 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:19:12 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:19:12 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:19:12 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:12 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:19:12 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:19:12 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:19:12 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:19:12 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:19:12 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:19:12 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:19:12 UTC] VIEW::handleMessages
+[26-Jun-2022 15:19:24 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:19:24 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:19:24 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:24 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:19:24 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:19:24 UTC] SessionController::validateSession()
+[26-Jun-2022 15:19:24 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:19:24 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:24 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:19:24 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:19:24 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:19:24 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:19:24 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:19:24 UTC] FALSE
+[26-Jun-2022 15:19:24 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:19:24 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:19:24 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:19:24 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:24 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:19:25 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:19:25 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:19:25 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:19:25 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:19:25 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:19:25 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:19:25 UTC] VIEW::handleMessages
+[26-Jun-2022 15:19:54 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:19:54 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:19:54 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:54 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:19:54 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:19:54 UTC] SessionController::validateSession()
+[26-Jun-2022 15:19:54 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:19:54 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:54 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:19:54 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:19:54 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:19:54 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:19:54 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:19:54 UTC] FALSE
+[26-Jun-2022 15:19:54 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:19:54 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:19:54 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:19:54 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:19:54 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:19:54 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:19:54 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:19:54 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:19:54 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:19:54 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:19:54 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:19:54 UTC] VIEW::handleMessages
+[26-Jun-2022 15:20:56 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:20:56 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:20:56 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:20:56 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:20:56 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:20:56 UTC] SessionController::validateSession()
+[26-Jun-2022 15:20:56 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:20:56 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:20:56 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:20:56 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:20:56 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:20:56 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:20:56 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:20:56 UTC] FALSE
+[26-Jun-2022 15:20:56 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:20:56 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:20:56 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:20:56 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:20:56 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:20:56 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:20:56 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:20:56 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:20:56 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:20:56 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:20:56 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:20:56 UTC] VIEW::handleMessages
+[26-Jun-2022 15:22:08 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:22:08 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:22:08 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:08 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:22:08 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:22:08 UTC] SessionController::validateSession()
+[26-Jun-2022 15:22:08 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:22:08 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:08 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:22:09 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:22:09 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:22:09 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:22:09 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:22:09 UTC] FALSE
+[26-Jun-2022 15:22:09 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:22:09 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:22:09 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:22:09 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:09 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:22:09 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:22:09 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:22:09 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:22:09 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:22:09 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:22:09 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:22:09 UTC] VIEW::handleMessages
+[26-Jun-2022 15:22:18 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:22:18 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:22:18 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:18 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:22:18 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:22:18 UTC] SessionController::validateSession()
+[26-Jun-2022 15:22:18 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:22:18 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:18 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:22:18 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:22:18 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:22:18 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:22:18 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:22:18 UTC] FALSE
+[26-Jun-2022 15:22:18 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:22:18 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:22:18 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:22:18 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:18 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:22:18 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:22:18 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:22:18 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:22:18 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:22:18 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:22:18 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:22:18 UTC] VIEW::handleMessages
+[26-Jun-2022 15:22:40 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:22:40 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:22:40 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:40 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:22:40 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:22:40 UTC] SessionController::validateSession()
+[26-Jun-2022 15:22:40 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:22:40 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:40 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:22:40 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:22:40 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:22:40 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:22:40 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:22:40 UTC] FALSE
+[26-Jun-2022 15:22:40 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:22:40 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:22:40 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:22:40 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:22:40 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:22:40 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:22:40 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:22:40 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:22:40 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:22:40 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:22:40 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:22:40 UTC] VIEW::handleMessages
+[26-Jun-2022 15:26:20 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:26:20 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:26:20 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:20 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:26:20 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:26:20 UTC] SessionController::validateSession()
+[26-Jun-2022 15:26:20 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:20 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:20 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:20 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:20 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:26:20 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:20 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:26:20 UTC] FALSE
+[26-Jun-2022 15:26:20 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:20 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:26:20 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:20 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:20 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:20 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:20 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:26:20 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:26:20 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:26:20 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:26:20 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:26:20 UTC] VIEW::handleMessages
+[26-Jun-2022 15:26:35 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:26:35 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:26:35 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:35 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:26:35 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:26:35 UTC] SessionController::validateSession()
+[26-Jun-2022 15:26:35 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:35 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:35 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:35 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:35 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:26:35 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:35 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:26:35 UTC] FALSE
+[26-Jun-2022 15:26:35 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:35 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:26:35 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:35 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:35 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:35 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:35 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:26:35 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:26:35 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:26:35 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:26:35 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:26:35 UTC] VIEW::handleMessages
+[26-Jun-2022 15:26:37 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:26:37 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:26:37 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:37 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:26:37 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:26:37 UTC] SessionController::validateSession()
+[26-Jun-2022 15:26:37 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:37 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:37 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:37 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:37 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:26:37 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:37 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:26:37 UTC] FALSE
+[26-Jun-2022 15:26:37 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:37 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:26:37 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:37 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:37 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:37 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:37 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:26:37 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:26:37 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:26:37 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:26:37 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:26:37 UTC] VIEW::handleMessages
+[26-Jun-2022 15:26:40 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:26:40 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:26:40 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:40 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:26:40 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:26:40 UTC] SessionController::validateSession()
+[26-Jun-2022 15:26:40 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:40 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:40 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:40 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:40 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:26:40 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:40 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:26:40 UTC] FALSE
+[26-Jun-2022 15:26:40 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:40 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:26:40 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:40 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:40 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:40 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:40 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:26:40 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:26:40 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:26:40 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:26:40 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:26:40 UTC] VIEW::handleMessages
+[26-Jun-2022 15:26:51 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:26:51 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:26:51 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:51 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:26:51 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:26:51 UTC] SessionController::validateSession()
+[26-Jun-2022 15:26:51 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:51 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:51 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:51 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:51 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:26:51 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:51 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:26:51 UTC] FALSE
+[26-Jun-2022 15:26:51 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:26:51 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:26:51 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:26:51 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:26:51 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:26:52 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:26:52 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:26:52 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:26:52 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:26:52 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:26:52 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:26:52 UTC] VIEW::handleMessages
+[26-Jun-2022 15:27:18 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:27:18 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:27:18 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:18 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:27:18 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:27:18 UTC] SessionController::validateSession()
+[26-Jun-2022 15:27:18 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:18 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:18 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:18 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:18 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:27:18 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:18 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:27:18 UTC] FALSE
+[26-Jun-2022 15:27:18 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:18 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:27:18 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:18 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:18 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:19 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:19 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:27:19 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:27:19 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:27:19 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:27:19 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:27:19 UTC] VIEW::handleMessages
+[26-Jun-2022 15:27:19 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:27:19 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:27:19 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:19 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:27:19 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:27:19 UTC] SessionController::validateSession()
+[26-Jun-2022 15:27:19 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:19 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:19 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:19 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:19 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:27:19 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:19 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:27:19 UTC] FALSE
+[26-Jun-2022 15:27:19 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:19 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:27:19 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:19 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:19 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:19 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:19 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:27:19 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:27:19 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:27:19 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:27:19 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:27:19 UTC] VIEW::handleMessages
+[26-Jun-2022 15:27:48 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:27:48 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:27:48 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:48 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:27:48 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:27:48 UTC] SessionController::validateSession()
+[26-Jun-2022 15:27:48 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:48 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:48 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:48 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:48 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:27:48 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:48 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:27:48 UTC] FALSE
+[26-Jun-2022 15:27:48 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:48 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:27:48 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:48 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:48 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:49 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:49 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:27:49 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:27:49 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:27:49 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:27:49 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:27:49 UTC] VIEW::handleMessages
+[26-Jun-2022 15:27:50 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:27:50 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:27:50 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:50 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:27:50 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:27:50 UTC] SessionController::validateSession()
+[26-Jun-2022 15:27:50 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:50 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:50 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:50 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:50 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:27:50 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:50 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:27:50 UTC] FALSE
+[26-Jun-2022 15:27:50 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:50 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:27:50 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:50 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:50 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:50 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:50 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:27:50 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:27:50 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:27:50 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:27:50 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:27:50 UTC] VIEW::handleMessages
+[26-Jun-2022 15:27:56 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:27:56 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:27:56 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:56 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:27:56 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:27:56 UTC] SessionController::validateSession()
+[26-Jun-2022 15:27:56 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:56 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:56 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:56 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:56 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:27:56 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:56 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:27:56 UTC] FALSE
+[26-Jun-2022 15:27:56 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:27:56 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:27:56 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:27:56 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:27:56 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:27:56 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:27:56 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:27:56 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:27:56 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:27:56 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:27:56 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:27:56 UTC] VIEW::handleMessages
+[26-Jun-2022 15:28:19 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:28:19 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:28:19 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:28:19 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:28:19 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:28:19 UTC] SessionController::validateSession()
+[26-Jun-2022 15:28:19 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:28:19 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:28:19 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:28:19 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:28:19 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:28:19 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:28:19 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:28:19 UTC] FALSE
+[26-Jun-2022 15:28:19 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:28:19 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:28:19 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:28:19 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:28:19 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:28:19 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:28:19 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:28:19 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:28:19 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:28:19 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:28:19 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:28:19 UTC] VIEW::handleMessages
+[26-Jun-2022 15:28:20 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:28:20 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:28:20 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:28:20 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:28:20 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:28:20 UTC] SessionController::validateSession()
+[26-Jun-2022 15:28:20 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:28:20 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:28:20 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:28:20 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:28:20 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:28:20 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:28:20 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:28:20 UTC] FALSE
+[26-Jun-2022 15:28:20 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:28:20 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:28:20 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:28:20 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:28:20 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:28:20 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:28:20 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:28:20 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:28:20 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:28:20 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:28:20 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:28:20 UTC] VIEW::handleMessages
+[26-Jun-2022 15:30:56 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:30:56 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:30:56 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:30:56 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:30:56 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:30:56 UTC] SessionController::validateSession()
+[26-Jun-2022 15:30:56 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:30:56 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:30:56 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:30:56 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:30:56 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:30:56 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:30:56 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:30:56 UTC] FALSE
+[26-Jun-2022 15:30:56 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:30:56 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:30:56 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:30:56 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:30:56 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:30:56 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:30:56 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:30:56 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:30:56 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:30:56 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:30:56 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:30:56 UTC] VIEW::handleMessages
+[26-Jun-2022 15:31:07 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:31:07 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:31:07 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:07 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:31:07 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:31:07 UTC] SessionController::validateSession()
+[26-Jun-2022 15:31:07 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:31:07 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:07 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:31:07 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:31:07 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:31:07 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:31:07 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:31:07 UTC] FALSE
+[26-Jun-2022 15:31:07 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:31:07 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:31:07 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:31:07 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:07 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:31:07 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:31:07 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:31:07 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:31:07 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:31:07 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:31:07 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:31:07 UTC] VIEW::handleMessages
+[26-Jun-2022 15:31:41 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:31:41 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:31:41 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:41 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:31:41 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:31:41 UTC] SessionController::validateSession()
+[26-Jun-2022 15:31:41 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:31:41 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:41 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:31:41 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:31:41 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:31:41 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:31:41 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:31:41 UTC] FALSE
+[26-Jun-2022 15:31:41 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:31:41 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:31:41 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:31:41 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:41 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:31:41 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:31:42 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:31:42 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:31:42 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:31:42 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:31:42 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:31:42 UTC] VIEW::handleMessages
+[26-Jun-2022 15:31:43 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:31:43 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:31:43 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:43 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:31:43 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:31:43 UTC] SessionController::validateSession()
+[26-Jun-2022 15:31:43 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:31:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:43 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:31:43 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:31:43 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:31:43 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:31:43 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:31:43 UTC] FALSE
+[26-Jun-2022 15:31:43 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:31:43 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:31:43 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:31:43 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:43 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:31:43 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:31:43 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:31:43 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:31:43 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:31:43 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:31:43 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:31:43 UTC] VIEW::handleMessages
+[26-Jun-2022 15:31:44 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:31:44 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:31:44 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:44 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:31:44 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:31:44 UTC] SessionController::validateSession()
+[26-Jun-2022 15:31:44 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:31:44 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:44 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:31:44 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:31:44 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:31:44 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:31:44 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:31:44 UTC] FALSE
+[26-Jun-2022 15:31:44 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:31:44 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:31:44 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:31:44 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:31:44 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:31:44 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:31:44 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:31:44 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:31:44 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:31:44 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:31:44 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:31:44 UTC] VIEW::handleMessages
+[26-Jun-2022 15:32:00 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:32:00 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:32:00 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:00 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:32:00 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:32:00 UTC] SessionController::validateSession()
+[26-Jun-2022 15:32:00 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:32:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:00 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:32:00 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:32:00 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:32:00 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:32:00 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:32:00 UTC] FALSE
+[26-Jun-2022 15:32:00 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:32:00 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:32:00 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:32:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:00 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:32:00 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:32:00 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:32:00 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:32:00 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:32:00 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:32:00 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:32:00 UTC] VIEW::handleMessages
+[26-Jun-2022 15:32:01 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:32:01 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:32:01 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:01 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:32:01 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:32:01 UTC] SessionController::validateSession()
+[26-Jun-2022 15:32:01 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:32:01 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:01 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:32:01 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:32:01 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:32:01 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:32:01 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:32:01 UTC] FALSE
+[26-Jun-2022 15:32:01 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:32:01 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:32:01 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:32:01 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:01 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:32:01 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:32:01 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:32:01 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:32:01 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:32:01 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:32:01 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:32:01 UTC] VIEW::handleMessages
+[26-Jun-2022 15:32:07 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:32:07 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:32:07 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:07 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:32:07 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:32:07 UTC] SessionController::validateSession()
+[26-Jun-2022 15:32:07 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:32:07 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:07 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:32:07 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:32:07 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:32:07 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:32:07 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:32:07 UTC] FALSE
+[26-Jun-2022 15:32:07 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:32:07 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:32:07 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:32:07 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:32:07 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:32:07 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:32:07 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:32:07 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:32:07 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:32:07 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:32:07 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:32:07 UTC] VIEW::handleMessages
+[26-Jun-2022 15:33:25 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:33:25 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:33:25 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:33:25 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:33:25 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:33:25 UTC] SessionController::validateSession()
+[26-Jun-2022 15:33:25 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:33:25 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:33:25 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:33:25 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:33:25 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:33:25 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:33:25 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:33:25 UTC] FALSE
+[26-Jun-2022 15:33:25 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:33:25 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:33:25 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:33:25 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:33:25 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:33:25 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:33:25 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:33:25 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:33:25 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:33:25 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:33:25 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:33:25 UTC] VIEW::handleMessages
+[26-Jun-2022 15:33:25 UTC] PHP Notice:  Undefined variable: monto in C:\wamp64\www\casino\views\jugar\index.php on line 28
+[26-Jun-2022 15:33:25 UTC] PHP Stack trace:
+[26-Jun-2022 15:33:25 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 15:33:25 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 15:33:25 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 15:33:25 UTC] PHP   4. View->render($nombre = 'jugar/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 15:33:25 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 15:33:25 UTC] PHP Notice:  Undefined variable: dineroApostado in C:\wamp64\www\casino\views\jugar\index.php on line 40
+[26-Jun-2022 15:33:25 UTC] PHP Stack trace:
+[26-Jun-2022 15:33:25 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 15:33:25 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 15:33:25 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 15:33:25 UTC] PHP   4. View->render($nombre = 'jugar/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 15:33:25 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 15:33:25 UTC] PHP Notice:  Undefined variable: dineroGanado in C:\wamp64\www\casino\views\jugar\index.php on line 51
+[26-Jun-2022 15:33:25 UTC] PHP Stack trace:
+[26-Jun-2022 15:33:25 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 15:33:25 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 15:33:25 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 15:33:25 UTC] PHP   4. View->render($nombre = 'jugar/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 15:33:25 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 15:34:17 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:34:17 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:34:17 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:34:17 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:34:17 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:34:17 UTC] SessionController::validateSession()
+[26-Jun-2022 15:34:17 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:34:17 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:34:17 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:34:17 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:34:17 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:34:17 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:34:17 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:34:17 UTC] FALSE
+[26-Jun-2022 15:34:17 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:34:17 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:34:17 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:34:17 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:34:17 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:34:17 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:34:17 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:34:17 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:34:17 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:34:17 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:34:17 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:34:17 UTC] VIEW::handleMessages
+[26-Jun-2022 15:34:17 UTC] PHP Notice:  Undefined variable: dineroApostado in C:\wamp64\www\casino\views\jugar\index.php on line 36
+[26-Jun-2022 15:34:17 UTC] PHP Stack trace:
+[26-Jun-2022 15:34:17 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 15:34:17 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 15:34:17 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 15:34:17 UTC] PHP   4. View->render($nombre = 'jugar/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 15:34:17 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 15:34:17 UTC] PHP Notice:  Undefined variable: dineroGanado in C:\wamp64\www\casino\views\jugar\index.php on line 47
+[26-Jun-2022 15:34:17 UTC] PHP Stack trace:
+[26-Jun-2022 15:34:17 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 15:34:17 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 15:34:17 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 15:34:17 UTC] PHP   4. View->render($nombre = 'jugar/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 15:34:17 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 15:34:30 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:34:30 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:34:30 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:34:30 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:34:30 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:34:30 UTC] SessionController::validateSession()
+[26-Jun-2022 15:34:30 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:34:30 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:34:30 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:34:30 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:34:30 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:34:30 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:34:30 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:34:30 UTC] FALSE
+[26-Jun-2022 15:34:30 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:34:30 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:34:30 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:34:30 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:34:30 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:34:30 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:34:30 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:34:30 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:34:30 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:34:30 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:34:30 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:34:30 UTC] VIEW::handleMessages
+[26-Jun-2022 15:34:30 UTC] PHP Notice:  Undefined variable: dineroApostado in C:\wamp64\www\casino\views\jugar\index.php on line 35
+[26-Jun-2022 15:34:30 UTC] PHP Stack trace:
+[26-Jun-2022 15:34:30 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 15:34:30 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 15:34:30 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 15:34:30 UTC] PHP   4. View->render($nombre = 'jugar/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 15:34:30 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 15:34:30 UTC] PHP Notice:  Undefined variable: dineroGanado in C:\wamp64\www\casino\views\jugar\index.php on line 46
+[26-Jun-2022 15:34:30 UTC] PHP Stack trace:
+[26-Jun-2022 15:34:30 UTC] PHP   1. {main}() C:\wamp64\www\casino\index.php:0
+[26-Jun-2022 15:34:30 UTC] PHP   2. App->__construct() C:\wamp64\www\casino\index.php:16
+[26-Jun-2022 15:34:30 UTC] PHP   3. Jugar->render() C:\wamp64\www\casino\libs\app.php:59
+[26-Jun-2022 15:34:30 UTC] PHP   4. View->render($nombre = 'jugar/index', $data = ['title' => 'Jugar']) C:\wamp64\www\casino\controllers\jugar.php:18
+[26-Jun-2022 15:34:30 UTC] PHP   5. require() C:\wamp64\www\casino\libs\view.php:16
+[26-Jun-2022 15:36:31 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:36:31 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:36:31 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:36:31 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:36:31 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:36:31 UTC] SessionController::validateSession()
+[26-Jun-2022 15:36:31 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:36:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:36:31 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:36:31 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:36:31 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:36:31 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:36:31 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:36:31 UTC] FALSE
+[26-Jun-2022 15:36:31 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:36:31 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:36:31 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:36:31 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:36:31 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:36:31 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:36:31 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:36:31 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:36:31 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:36:31 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:36:31 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:36:31 UTC] VIEW::handleMessages
+[26-Jun-2022 15:37:37 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:37:37 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:37:37 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:37:37 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:37:37 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:37:37 UTC] SessionController::validateSession()
+[26-Jun-2022 15:37:37 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:37:37 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:37:37 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:37:37 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:37:37 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:37:37 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:37:37 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:37:37 UTC] FALSE
+[26-Jun-2022 15:37:37 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:37:37 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:37:37 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:37:37 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:37:37 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:37:38 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:37:38 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:37:38 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:37:38 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:37:38 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:37:38 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:37:38 UTC] VIEW::handleMessages
+[26-Jun-2022 15:38:27 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:38:27 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:38:27 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:38:27 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:38:27 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:38:27 UTC] SessionController::validateSession()
+[26-Jun-2022 15:38:27 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:38:27 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:38:27 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:38:27 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:38:27 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:38:27 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:38:27 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:38:27 UTC] FALSE
+[26-Jun-2022 15:38:27 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:38:27 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:38:27 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:38:27 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:38:27 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:38:27 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:38:27 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:38:27 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:38:27 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:38:27 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:38:27 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:38:27 UTC] VIEW::handleMessages
+[26-Jun-2022 15:39:07 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:39:07 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:39:07 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:39:07 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:39:07 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:39:07 UTC] SessionController::validateSession()
+[26-Jun-2022 15:39:07 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:39:07 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:39:07 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:39:07 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:39:07 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:39:07 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:39:07 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:39:07 UTC] FALSE
+[26-Jun-2022 15:39:07 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:39:07 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:39:07 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:39:07 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:39:07 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:39:07 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:39:07 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:39:07 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:39:07 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:39:07 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:39:07 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:39:07 UTC] VIEW::handleMessages
+[26-Jun-2022 15:43:50 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:43:50 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:43:50 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:43:50 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:43:50 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:43:50 UTC] SessionController::validateSession()
+[26-Jun-2022 15:43:50 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:43:50 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:43:50 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:43:50 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:43:50 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:43:50 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:43:50 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:43:50 UTC] FALSE
+[26-Jun-2022 15:43:50 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:43:50 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:43:50 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:43:50 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:43:50 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:43:50 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:43:50 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:43:50 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:43:50 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:43:50 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:43:50 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:43:50 UTC] VIEW::handleMessages
+[26-Jun-2022 15:44:25 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:44:25 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:44:25 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:44:25 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:44:25 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:44:25 UTC] SessionController::validateSession()
+[26-Jun-2022 15:44:25 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:44:25 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:44:25 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:44:25 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:44:25 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:44:25 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:44:25 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:44:25 UTC] FALSE
+[26-Jun-2022 15:44:25 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:44:25 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:44:25 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:44:25 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:44:25 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:44:25 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:44:25 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:44:25 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:44:25 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:44:25 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:44:25 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:44:25 UTC] VIEW::handleMessages
+[26-Jun-2022 15:45:29 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:45:29 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:45:29 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:29 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:45:29 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:45:29 UTC] SessionController::validateSession()
+[26-Jun-2022 15:45:29 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:45:29 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:29 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:45:30 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:45:30 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:45:30 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:45:30 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:45:30 UTC] FALSE
+[26-Jun-2022 15:45:30 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:45:30 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:45:30 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:45:30 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:30 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:45:30 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:45:30 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:45:30 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:45:30 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:45:30 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:45:30 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:45:30 UTC] VIEW::handleMessages
+[26-Jun-2022 15:45:42 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:45:42 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:45:42 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:42 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:45:42 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:45:42 UTC] SessionController::validateSession()
+[26-Jun-2022 15:45:42 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:45:42 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:42 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:45:42 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:45:42 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:45:42 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:45:42 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:45:42 UTC] FALSE
+[26-Jun-2022 15:45:42 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:45:42 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:45:42 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:45:42 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:42 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:45:43 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:45:43 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:45:43 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:45:43 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:45:43 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:45:43 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:45:43 UTC] VIEW::handleMessages
+[26-Jun-2022 15:45:51 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:45:51 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:45:51 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:51 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:45:51 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:45:51 UTC] SessionController::validateSession()
+[26-Jun-2022 15:45:51 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:45:51 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:51 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:45:51 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:45:51 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:45:51 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:45:51 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:45:51 UTC] FALSE
+[26-Jun-2022 15:45:51 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:45:51 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:45:51 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:45:51 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:45:51 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:45:51 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:45:51 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:45:51 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:45:51 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:45:51 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:45:51 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:45:51 UTC] VIEW::handleMessages
+[26-Jun-2022 15:46:00 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:46:00 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:46:00 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:00 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:46:00 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:46:00 UTC] SessionController::validateSession()
+[26-Jun-2022 15:46:00 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:00 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:00 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:00 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:46:00 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:00 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:46:00 UTC] FALSE
+[26-Jun-2022 15:46:00 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:00 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:46:00 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:00 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:00 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:00 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:46:00 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:46:00 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:46:00 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:46:00 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:46:00 UTC] VIEW::handleMessages
+[26-Jun-2022 15:46:00 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:46:00 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:46:00 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:00 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:46:00 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:46:00 UTC] SessionController::validateSession()
+[26-Jun-2022 15:46:00 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:00 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:00 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:00 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:46:00 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:00 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:46:00 UTC] FALSE
+[26-Jun-2022 15:46:00 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:00 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:46:00 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:00 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:00 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:01 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:01 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:46:01 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:46:01 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:46:01 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:46:01 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:46:01 UTC] VIEW::handleMessages
+[26-Jun-2022 15:46:16 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:46:16 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:46:16 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:16 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:46:16 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:46:16 UTC] SessionController::validateSession()
+[26-Jun-2022 15:46:16 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:16 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:16 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:16 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:16 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:46:16 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:16 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:46:16 UTC] FALSE
+[26-Jun-2022 15:46:16 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:16 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:46:16 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:16 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:16 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:16 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:16 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:46:16 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:46:16 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:46:16 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:46:16 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:46:16 UTC] VIEW::handleMessages
+[26-Jun-2022 15:46:39 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:46:39 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:46:39 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:39 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:46:39 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:46:39 UTC] SessionController::validateSession()
+[26-Jun-2022 15:46:39 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:39 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:39 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:39 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:39 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:46:39 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:39 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:46:39 UTC] FALSE
+[26-Jun-2022 15:46:39 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:39 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:46:39 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:39 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:39 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:39 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:39 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:46:39 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:46:39 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:46:39 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:46:39 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:46:39 UTC] VIEW::handleMessages
+[26-Jun-2022 15:46:50 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:46:50 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:46:50 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:50 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:46:50 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:46:50 UTC] SessionController::validateSession()
+[26-Jun-2022 15:46:50 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:50 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:50 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:50 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:50 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:46:50 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:50 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:46:50 UTC] FALSE
+[26-Jun-2022 15:46:50 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:46:50 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:46:50 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:46:50 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:46:50 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:46:50 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:46:50 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:46:50 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:46:50 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:46:50 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:46:50 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:46:50 UTC] VIEW::handleMessages
+[26-Jun-2022 15:47:09 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:47:09 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:47:09 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:09 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:47:09 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:47:09 UTC] SessionController::validateSession()
+[26-Jun-2022 15:47:09 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:47:09 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:09 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:47:09 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:47:09 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:47:09 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:47:09 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:47:09 UTC] FALSE
+[26-Jun-2022 15:47:09 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:47:09 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:47:09 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:47:09 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:09 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:47:09 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:47:09 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:47:09 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:47:09 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:47:09 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:47:09 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:47:09 UTC] VIEW::handleMessages
+[26-Jun-2022 15:47:25 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:47:25 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:47:25 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:25 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:47:25 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:47:25 UTC] SessionController::validateSession()
+[26-Jun-2022 15:47:25 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:47:25 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:25 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:47:25 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:47:25 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:47:25 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:47:25 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:47:25 UTC] FALSE
+[26-Jun-2022 15:47:25 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:47:25 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:47:25 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:47:25 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:25 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:47:25 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:47:25 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:47:25 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:47:25 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:47:25 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:47:25 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:47:25 UTC] VIEW::handleMessages
+[26-Jun-2022 15:47:39 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:47:39 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:47:39 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:39 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:47:39 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:47:39 UTC] SessionController::validateSession()
+[26-Jun-2022 15:47:39 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:47:39 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:39 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:47:39 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:47:39 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:47:39 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:47:39 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:47:39 UTC] FALSE
+[26-Jun-2022 15:47:39 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:47:39 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:47:39 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:47:39 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:39 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:47:39 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:47:39 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:47:39 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:47:39 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:47:39 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:47:39 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:47:39 UTC] VIEW::handleMessages
+[26-Jun-2022 15:47:40 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:47:40 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:47:40 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:40 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:47:40 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:47:40 UTC] SessionController::validateSession()
+[26-Jun-2022 15:47:40 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:47:40 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:40 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:47:40 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:47:40 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:47:40 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:47:40 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:47:40 UTC] FALSE
+[26-Jun-2022 15:47:40 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:47:40 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:47:40 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:47:40 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:47:40 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:47:40 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:47:40 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:47:40 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:47:40 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:47:40 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:47:40 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:47:40 UTC] VIEW::handleMessages
+[26-Jun-2022 15:48:21 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:48:21 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:48:21 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:48:21 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:48:21 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:48:21 UTC] SessionController::validateSession()
+[26-Jun-2022 15:48:21 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:48:21 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:48:21 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:48:21 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:48:21 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:48:21 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:48:21 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:48:21 UTC] FALSE
+[26-Jun-2022 15:48:21 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:48:21 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:48:21 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:48:21 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:48:21 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:48:21 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:48:21 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:48:21 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:48:21 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:48:21 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:48:21 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:48:21 UTC] VIEW::handleMessages
+[26-Jun-2022 15:49:14 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:49:14 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:49:14 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:49:14 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:49:14 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:49:14 UTC] SessionController::validateSession()
+[26-Jun-2022 15:49:14 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:49:14 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:49:14 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:49:14 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:49:14 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:49:14 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:49:14 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:49:14 UTC] FALSE
+[26-Jun-2022 15:49:14 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:49:14 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:49:14 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:49:14 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:49:14 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:49:14 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:49:14 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:49:14 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:49:14 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:49:14 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:49:14 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:49:14 UTC] VIEW::handleMessages
+[26-Jun-2022 15:50:52 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:50:52 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:50:52 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:50:52 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:50:52 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:50:52 UTC] SessionController::validateSession()
+[26-Jun-2022 15:50:52 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:50:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:50:52 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:50:52 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:50:52 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:50:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:50:52 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:50:52 UTC] FALSE
+[26-Jun-2022 15:50:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:50:52 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:50:52 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:50:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:50:52 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:50:52 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:50:52 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:50:52 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:50:52 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:50:52 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:50:52 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:50:52 UTC] VIEW::handleMessages
+[26-Jun-2022 15:52:19 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:52:19 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:52:19 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:52:19 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:52:19 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:52:19 UTC] SessionController::validateSession()
+[26-Jun-2022 15:52:19 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:52:19 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:52:19 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:52:19 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:52:19 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:52:19 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:52:19 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:52:19 UTC] FALSE
+[26-Jun-2022 15:52:19 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:52:19 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:52:19 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:52:19 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:52:19 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:52:19 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:52:19 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:52:19 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:52:19 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:52:19 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:52:19 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:52:19 UTC] VIEW::handleMessages
+[26-Jun-2022 15:52:35 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:52:35 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:52:35 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:52:35 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:52:35 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:52:35 UTC] SessionController::validateSession()
+[26-Jun-2022 15:52:35 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:52:35 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:52:35 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:52:36 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:52:36 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:52:36 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:52:36 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:52:36 UTC] FALSE
+[26-Jun-2022 15:52:36 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:52:36 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:52:36 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:52:36 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:52:36 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:52:36 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:52:36 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:52:36 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:52:36 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:52:36 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:52:36 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:52:36 UTC] VIEW::handleMessages
+[26-Jun-2022 15:53:16 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:53:16 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:53:16 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:16 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:53:16 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:53:16 UTC] SessionController::validateSession()
+[26-Jun-2022 15:53:16 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:53:16 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:16 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:53:16 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:53:16 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:53:16 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:53:16 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:53:16 UTC] FALSE
+[26-Jun-2022 15:53:16 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:53:16 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:53:16 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:53:16 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:16 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:53:16 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:53:16 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:53:16 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:53:16 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:53:16 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:53:16 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:53:16 UTC] VIEW::handleMessages
+[26-Jun-2022 15:53:33 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:53:33 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:53:33 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:33 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:53:33 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:53:33 UTC] SessionController::validateSession()
+[26-Jun-2022 15:53:33 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:53:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:33 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:53:33 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:53:33 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:53:33 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:53:33 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:53:33 UTC] FALSE
+[26-Jun-2022 15:53:33 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:53:33 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:53:33 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:53:33 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:33 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:53:33 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:53:33 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:53:33 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:53:33 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:53:33 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:53:33 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:53:33 UTC] VIEW::handleMessages
+[26-Jun-2022 15:53:49 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:53:49 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:53:49 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:49 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:53:49 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:53:49 UTC] SessionController::validateSession()
+[26-Jun-2022 15:53:49 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:53:49 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:49 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:53:49 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:53:49 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:53:49 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:53:49 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:53:49 UTC] FALSE
+[26-Jun-2022 15:53:49 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:53:49 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:53:49 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:53:49 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:49 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:53:49 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:53:49 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:53:49 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:53:49 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:53:49 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:53:49 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:53:49 UTC] VIEW::handleMessages
+[26-Jun-2022 15:53:55 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:53:55 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:53:55 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:55 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:53:55 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:53:55 UTC] SessionController::validateSession()
+[26-Jun-2022 15:53:55 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:53:55 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:55 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:53:55 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:53:55 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:53:55 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:53:55 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:53:55 UTC] FALSE
+[26-Jun-2022 15:53:55 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:53:55 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:53:55 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:53:55 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:53:55 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:53:55 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:53:55 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:53:55 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:53:55 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:53:55 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:53:55 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:53:55 UTC] VIEW::handleMessages
+[26-Jun-2022 15:54:01 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:54:01 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:54:01 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:01 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:54:01 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:54:01 UTC] SessionController::validateSession()
+[26-Jun-2022 15:54:01 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:54:01 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:01 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:54:01 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:54:01 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:54:01 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:54:01 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:54:01 UTC] FALSE
+[26-Jun-2022 15:54:01 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:54:01 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:54:01 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:54:01 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:01 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:54:01 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:54:01 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:54:01 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:54:01 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:54:01 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:54:01 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:54:01 UTC] VIEW::handleMessages
+[26-Jun-2022 15:54:12 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:54:12 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:54:12 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:12 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:54:12 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:54:12 UTC] SessionController::validateSession()
+[26-Jun-2022 15:54:12 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:54:12 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:12 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:54:12 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:54:12 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:54:12 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:54:12 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:54:12 UTC] FALSE
+[26-Jun-2022 15:54:12 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:54:12 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:54:12 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:54:12 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:12 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:54:12 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:54:12 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:54:12 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:54:12 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:54:12 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:54:12 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:54:12 UTC] VIEW::handleMessages
+[26-Jun-2022 15:54:52 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:54:52 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:54:52 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:52 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:54:52 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:54:52 UTC] SessionController::validateSession()
+[26-Jun-2022 15:54:52 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:54:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:52 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:54:52 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:54:52 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:54:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:54:52 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:54:52 UTC] FALSE
+[26-Jun-2022 15:54:52 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:54:52 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:54:52 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:54:52 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:54:52 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:54:53 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:54:53 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:54:53 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:54:53 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:54:53 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:54:53 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:54:53 UTC] VIEW::handleMessages
+[26-Jun-2022 15:55:16 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:55:16 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:55:16 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:55:16 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:55:16 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:55:16 UTC] SessionController::validateSession()
+[26-Jun-2022 15:55:16 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:55:16 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:55:16 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:55:16 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:55:16 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:55:16 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:55:16 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:55:16 UTC] FALSE
+[26-Jun-2022 15:55:16 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:55:16 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:55:16 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:55:16 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:55:16 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:55:16 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:55:16 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:55:16 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:55:16 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:55:16 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:55:16 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:55:16 UTC] VIEW::handleMessages
+[26-Jun-2022 15:55:28 UTC] - - - - - - - Inicio de aplicación web - - - - - - -
+[26-Jun-2022 15:55:28 UTC] APP::CONSTRUCT-> Controlador: jugar
+[26-Jun-2022 15:55:28 UTC] CONTROLLER::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:55:28 UTC] VIEW::CONSTRUCT-> inicio de view(libs)
+[26-Jun-2022 15:55:28 UTC] SESSIONNAME::CONSTRUCT-> inicio de sessionName
+[26-Jun-2022 15:55:28 UTC] SessionController::validateSession()
+[26-Jun-2022 15:55:28 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:55:28 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:55:28 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:55:28 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:55:28 UTC] sessionController::validateSession(): username:zalocin - role: user
+[26-Jun-2022 15:55:28 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:55:28 UTC] sessionController::isPublic(): currentURL => jugar
+[26-Jun-2022 15:55:28 UTC] FALSE
+[26-Jun-2022 15:55:28 UTC] sessionController::getCurrentPage(): actualLink =>/casino/jugar, url => jugar
+[26-Jun-2022 15:55:28 UTC] SessionController::validateSession() => autorizado, lo deja pasar
+[26-Jun-2022 15:55:28 UTC] USERMODEL::CONSTRUCT-> inicio de UsernModel
+[26-Jun-2022 15:55:28 UTC] MODEL::CONSTRUCT-> inicio de controller(libs)
+[26-Jun-2022 15:55:28 UTC] Conexión a BD exitosa
+[26-Jun-2022 15:55:29 UTC] sessionController::getUserSessionData(): zalocin
+[26-Jun-2022 15:55:29 UTC] JUGAR::constructor() 
+[26-Jun-2022 15:55:29 UTC] CONTROLLER::loadModel-> jugar
+[26-Jun-2022 15:55:29 UTC] APP::CONSTRUCT-> Se carga el método default
+[26-Jun-2022 15:55:29 UTC] JUGAR::RENDER-> Carga el index de Jugar
+[26-Jun-2022 15:55:29 UTC] VIEW::RENDER-> jugar/index
+[26-Jun-2022 15:55:29 UTC] VIEW::handleMessages

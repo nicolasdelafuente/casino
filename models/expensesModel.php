@@ -80,7 +80,7 @@ class ExpensesModel extends Model implements IModel{
         $items = [];
 
         try{
-            $query = $this->prepare('SELECT * FROM expenses WHERE id_user = :userid');
+            $query = $this->prepare("SELECT * FROM expenses INNER JOIN categories ON category_id = categories.id WHERE id_user = :userid");
             $query->execute([ "userid" => $userid]);
 
             while($p = $query->fetch(PDO::FETCH_ASSOC)){
@@ -89,8 +89,8 @@ class ExpensesModel extends Model implements IModel{
                 
                 array_push($items, $item);
             }
-
             return $items;
+            
 
         }catch(PDOException $e){
             echo $e;
@@ -124,6 +124,7 @@ class ExpensesModel extends Model implements IModel{
             $total = $query->fetch(PDO::FETCH_ASSOC)['total'];
             if($total == NULL) $total = 0;
             
+            var_dump($total);
             return $total;
 
         }catch(PDOException $e){

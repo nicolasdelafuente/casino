@@ -1,5 +1,5 @@
 <?php
-require_once 'models/expensesModel.php';
+require_once 'models/transactionsModel.php';
   class Errores extends Controller{
 
     function __construct(){

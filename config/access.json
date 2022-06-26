@@ -21,7 +21,7 @@
       "role" : "user"
     },
     {
-      "site" : "expenses", 
+      "site" : "transactions", 
       "access" : "private", 
       "role" : "user"
     },

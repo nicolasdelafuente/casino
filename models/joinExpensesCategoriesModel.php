@@ -19,7 +19,7 @@ class JoinExpensesCategoriesModel extends Model{
     public function getAll($userid){
         $items = [];
         try{
-            $query = $this->prepare('SELECT expenses.id as expense_id, title, category_id, amount, date, id_user, categories.id, name, color  FROM expenses INNER JOIN categories WHERE expenses.category_id = categories.id AND expenses.id_user = :userid ORDER BY expense_id desc');
+            $query = $this->prepare('SELECT transactions.id as expense_id, title, category_id, amount, date, id_user, categories.id, name, color  FROM transactions INNER JOIN categories WHERE transactions.category_id = categories.id AND transactions.id_user = :userid ORDER BY expense_id desc');
             $query->execute(["userid" => $userid]);
 
 

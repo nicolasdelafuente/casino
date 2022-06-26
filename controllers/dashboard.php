@@ -16,25 +16,25 @@
     {
       error_log('DASHBOARD::RENDER-> Carga el index de Dashboard');
       
-      $expenses         = $this->getExpenses();
+      $transactions         = $this->getExpenses();
       $amount           = $this->getTotalAmount();
 
       $this->view->render('dashboard/index', [
         'title'                 => 'Dasboard',
         'user'                  => $this->user,
         'amount'                => $amount,
-        'expenses'              => $expenses,
+        'transactions'              => $transactions,
       ]);
     }   
 
     public function getExpenses() {     
-      $expenses = new JoinExpensesCategoriesModel();
-      return $expenses->getAll($this->user->getId());  
+      $transactions = new JoinExpensesCategoriesModel();
+      return $transactions->getAll($this->user->getId());  
     }
 
     public function getTotalAmount() {
-      $expenses = new ExpensesModel();
-      return $expenses->getTotalAmount($this->user->getId());
+      $transactions = new TransactionsModel();
+      return $transactions->getTotalAmount($this->user->getId());
     }
 
     

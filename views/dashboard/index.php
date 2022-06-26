@@ -1,6 +1,6 @@
 <?php
     $title = $data['title'];
-    $movimientos = $data['expenses'];
+    $movimientos = $data['transactions'];
     $monto = $data['amount'];
 
     $dineroApostado = 0;
@@ -26,17 +26,15 @@
     { 
     session_destroy();
     }
+
+    include_once 'views/include/header.php'
 ?>
 
 
 
-<FORM method="POST">
-        <input type="submit" name="Submit3" value="Destroy Session">
-      </FORM>
-  
-
-
-<input type="submit" name="Submit3" value="Destroy Session">
+<form method="POST">
+  <input type="submit" name="Submit3" value="Destroy Session">
+</form>
     <div class="container ">
       <div class="row mt-3 d-flex text-center justify-content-center">
         <div class="col-md-10">
